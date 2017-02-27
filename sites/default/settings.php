@@ -765,8 +765,3 @@ $databases['default']['default'] = array (
 );
 $settings['install_profile'] = 'standard';
 $config_directories['sync'] = 'sync';
-$config_directories['export'] = 'sites/default/files/config_export';
-$config_directories['import'] = 'sites/default/files/config_import';
-$config_directories = array(
-CONFIG_SYNC_DIRECTORY => 'sync',
-);
