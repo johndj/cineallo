@@ -30,7 +30,7 @@ function rss_theme() {
   return [
     'rss' => [
       'template' => 'rss',
-      'render element' => 'children',
+      c'render element' => 'children',
     ],
   ];
 }
