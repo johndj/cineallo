@@ -1,0 +1,36 @@
+<?php
+
+/**
+ * @file
+ * Contains rss.module.
+ */
+
+use Drupal\Core\Routing\RouteMatchInterface;
+
+/**
+ * Implements hook_help().
+ */
+function rss_help($route_name, RouteMatchInterface $route_match) {
+  switch ($route_name) {
+    // Main module help for the rss module.
+    case 'help.page.rss':
+      $output = '';
+      $output .= '<h3>' . t('About') . '</h3>';
+      $output .= '<p>' . t('My Awesome Module') . '</p>';
+      return $output;
+
+    default:
+  }
+}
+
+/**
+ * Implements hook_theme().
+ */
+function rss_theme() {
+  return [
+    'rss' => [
+      'template' => 'rss',
+      'render element' => 'children',
+    ],
+  ];
+}

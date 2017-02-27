@@ -1,0 +1,40 @@
+
+rss.parse_x_ml_controller_cettesemaine:
+  path: 'rss/cettesemaine'
+  defaults:
+    _controller: '\Drupal\rss\Controller\ParseXMlController::cetteSemaine'
+    _title: 'Cette semaine'
+  requirements:
+    _permission: 'access content'
+
+rss.parse_x_ml_controller_prochainement:
+  path: 'rss/prochainement'
+  defaults:
+    _controller: '\Drupal\rss\Controller\ParseXMlController::prochainement'
+    _title: 'Prochainement'
+  requirements:
+    _permission: 'access content'
+
+rss.parse_x_ml_controller_topfilms:
+  path: 'rss/topfilms'
+  defaults:
+    _controller: '\Drupal\rss\Controller\ParseXMlController::topfilms'
+    _title: 'Top Films'
+  requirements:
+    _permission: 'access content'
+
+rss.parse_x_ml_controller_bandesannonces:
+  path: 'rss/bandesannonces'
+  defaults:
+    _controller: '\Drupal\rss\Controller\ParseXMlController::bandesannonces'
+    _title: 'Top Films'
+  requirements:
+    _permission: 'access content'
+
+rss.parse_x_ml_controller_actualitecine:
+  path: 'rss/actualitecine'
+  defaults:
+    _controller: '\Drupal\rss\Controller\ParseXMlController::actualitecine'
+    _title: 'Actualité ciné'
+  requirements:
+    _permission: 'access content'
