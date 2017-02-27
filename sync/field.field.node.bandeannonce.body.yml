@@ -1,0 +1,22 @@
+uuid: 82b65b40-1f8f-4b43-aeb5-6d6e49676b11
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.body
+    - node.type.bandeannonce
+  module:
+    - text
+id: node.bandeannonce.body
+field_name: body
+entity_type: node
+bundle: bandeannonce
+label: Body
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings:
+  display_summary: true
+field_type: text_with_summary

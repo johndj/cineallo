@@ -1,0 +1,30 @@
+uuid: 09d6fe6e-05f0-4665-8a00-497ad13e8b7a
+langcode: en
+status: true
+dependencies:
+  config:
+    - views.view.bandeannonce
+  module:
+    - system
+    - views
+  theme:
+    - bootstrap
+id: views_block__bandeannonce_block_1
+theme: bootstrap
+region: content
+weight: -9
+provider: null
+plugin: 'views_block:bandeannonce-block_1'
+settings:
+  id: 'views_block:bandeannonce-block_1'
+  label: ''
+  provider: views
+  label_display: visible
+  views_label: ''
+  items_per_page: none
+visibility:
+  request_path:
+    id: request_path
+    pages: '<front>'
+    negate: false
+    context_mapping: {  }

@@ -1,0 +1,20 @@
+uuid: 892d4ec2-204f-4ff0-be3e-3faf7b1ba39d
+langcode: en
+status: true
+dependencies:
+  module:
+    - node
+    - text
+id: node.field_title_actualite
+field_name: field_title_actualite
+entity_type: node
+type: text
+settings:
+  max_length: 255
+module: text
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

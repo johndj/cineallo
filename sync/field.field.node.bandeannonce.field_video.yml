@@ -1,0 +1,22 @@
+uuid: bf6df83c-14e3-475e-b83b-fcebb8ae8467
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_video
+    - node.type.bandeannonce
+  module:
+    - video_embed_field
+id: node.bandeannonce.field_video
+field_name: field_video
+entity_type: node
+bundle: bandeannonce
+label: Video
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  allowed_providers: {  }
+field_type: video_embed_field

@@ -1,0 +1,23 @@
+uuid: b6988563-bcdd-4c9f-8ce0-064b56a08f42
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.node.teaser
+    - field.field.node.actualite.field_description_actualite
+    - field.field.node.actualite.field_image_actualite
+    - field.field.node.actualite.field_title_actualite
+    - node.type.actualite
+  module:
+    - user
+id: node.actualite.teaser
+targetEntityType: node
+bundle: actualite
+mode: teaser
+content:
+  links:
+    weight: 100
+hidden:
+  field_description_actualite: true
+  field_image_actualite: true
+  field_title_actualite: true
