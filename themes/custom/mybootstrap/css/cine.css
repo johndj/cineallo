@@ -18,3 +18,14 @@
 /*! normalize.css v3.0.3 | MIT License | github.com/necolas/normalize.css */
 /* line 9, ../bootstrap/assets/stylesheets/bootstrap/_normalize.scss */
 
+/*********************************************************************************************************************/
+
+/*********************************************************************************************************************/
+
+.view-frontpage .view-empty, .feed-icons{
+    display: none;
+}
+
+#collapse-0{
+    display: block;
+}
