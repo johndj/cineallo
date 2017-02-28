@@ -2,7 +2,7 @@
 
     //plier cacher
 
-    Drupal.behaviors.collapsableBlock = {
+    Drupal.behaviors.collapsableBlock2 = {
         attach: function(context, settings){
             $('li.expanded.dropdown').hover(
                 function() {
