@@ -378,6 +378,9 @@ display:
       relationships: {  }
       arguments: {  }
       display_extenders: {  }
+      use_more: true
+      use_more_always: true
+      use_more_text: Plus
     cache_metadata:
       max-age: 0
       contexts:
@@ -716,8 +719,8 @@ display:
         title: 'Cette semaine'
         description: ''
         expanded: false
-        parent: ''
-        weight: -46
+        parent: 'views_view:views.film.page_1'
+        weight: -49
         context: '0'
         menu_name: main
       pager:

@@ -368,6 +368,9 @@ display:
       relationships: {  }
       arguments: {  }
       display_extenders: {  }
+      use_more: true
+      use_more_always: true
+      use_more_text: Plus
     cache_metadata:
       max-age: -1
       contexts:
@@ -690,7 +693,8 @@ display:
         type: normal
         title: Prochainement
         menu_name: main
-        weight: -47
+        weight: -48
+        parent: 'views_view:views.film.page_1'
       style:
         type: views_bootstrap_table
         options:
