@@ -720,7 +720,7 @@ display:
         description: ''
         expanded: false
         parent: 'views_view:views.film.page_1'
-        weight: -49
+        weight: -48
         context: '0'
         menu_name: main
       pager:
