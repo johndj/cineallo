@@ -602,7 +602,7 @@ display:
         type: normal
         title: 'Top Films'
         menu_name: main
-        weight: -50
+        weight: -49
         parent: 'views_view:views.film.page_1'
       header: {  }
       defaults:
