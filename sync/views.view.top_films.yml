@@ -436,7 +436,7 @@ display:
           exclude: false
           alter:
             alter_text: true
-            text: '<img src="{{ field_image_link__uri }}" width=100/>'
+            text: '<img src="{{ field_image_link__uri }}" width=150/>'
             make_link: false
             path: ''
             absolute: false
