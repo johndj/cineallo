@@ -1,0 +1,30 @@
+uuid: 0b61a750-13c5-4eb3-a67a-1068e7143a48
+langcode: en
+status: true
+dependencies:
+  config:
+    - views.view.actualite_cine
+  module:
+    - system
+    - views
+  theme:
+    - mybootstrap
+id: mybootstrap_views_block__actualite_cine_block_1
+theme: mybootstrap
+region: actu
+weight: -9
+provider: null
+plugin: 'views_block:actualite_cine-block_1'
+settings:
+  id: 'views_block:actualite_cine-block_1'
+  label: ''
+  provider: views
+  label_display: visible
+  views_label: ''
+  items_per_page: none
+visibility:
+  request_path:
+    id: request_path
+    pages: '<front>'
+    negate: false
+    context_mapping: {  }

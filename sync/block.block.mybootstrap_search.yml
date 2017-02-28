@@ -1,0 +1,28 @@
+uuid: 882452b7-d83e-4551-ae3e-061c082a2cdb
+langcode: en
+status: true
+dependencies:
+  module:
+    - search
+    - system
+  theme:
+    - mybootstrap
+_core:
+  default_config_hash: F3d5hyAFunLh4PhGviJF019fHn1Z3_zy5gzsQ0tX1K0
+id: mybootstrap_search
+theme: mybootstrap
+region: header
+weight: -4
+provider: null
+plugin: search_form_block
+settings:
+  id: search_form_block
+  label: Search
+  provider: search
+  label_display: visible
+visibility:
+  request_path:
+    id: request_path
+    pages: '<front>'
+    negate: false
+    context_mapping: {  }

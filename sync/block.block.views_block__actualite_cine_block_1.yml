@@ -12,7 +12,7 @@ dependencies:
 id: views_block__actualite_cine_block_1
 theme: bootstrap
 region: content
-weight: -5
+weight: -7
 provider: null
 plugin: 'views_block:actualite_cine-block_1'
 settings:
