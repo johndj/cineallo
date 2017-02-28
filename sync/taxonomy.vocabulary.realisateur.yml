@@ -1,0 +1,9 @@
+uuid: 63bacca3-8e7c-4cf0-a557-53d82e63bd0a
+langcode: en
+status: true
+dependencies: {  }
+name: Realisateur
+vid: realisateur
+description: ''
+hierarchy: 0
+weight: 0
