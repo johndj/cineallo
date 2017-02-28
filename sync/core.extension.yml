@@ -53,6 +53,7 @@ module:
   video_embed_wysiwyg: 0
   views_bootstrap: 0
   views_ui: 0
+  webprofiler: 0
   menu_link_content: 1
   views: 10
   standard: 1000
