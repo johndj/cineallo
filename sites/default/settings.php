@@ -754,9 +754,9 @@ $settings['file_scan_ignore_directories'] = [
 #   include $app_root . '/' . $site_path . '/settings.local.php';
 # }
 $databases['default']['default'] = array (
-  'database' => 'user9_3',
-  'username' => 'user9',
-  'password' => 'user9-0917',
+  'database' => 'user8_3',
+  'username' => 'user8',
+  'password' => 'user8-0817',
   'prefix' => '',
   'host' => 'localhost',
   'port' => '3306',
@@ -765,8 +765,4 @@ $databases['default']['default'] = array (
 );
 $settings['install_profile'] = 'standard';
 $config_directories['sync'] = 'sync';
-$config_directories['export'] = 'sites/default/files/config_export';
-$config_directories['import'] = 'sites/default/files/config_import';
-$config_directories = array(
-CONFIG_SYNC_DIRECTORY => 'sync',
-);
+
