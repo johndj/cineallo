@@ -423,7 +423,7 @@ display:
           offset: 0
       use_more: true
       use_more_always: true
-      use_more_text: Plus
+      use_more_text: 'Toutes les news cinéma'
       fields:
         field_image_actualite:
           id: field_image_actualite

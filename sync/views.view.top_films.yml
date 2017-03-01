@@ -90,7 +90,7 @@ display:
           columns:
             field_image_link: field_image_link
             title: title
-            body: title
+            body: body
           info:
             field_image_link:
               align: ''
@@ -115,9 +115,9 @@ display:
           empty_table: 0
           responsive: 0
           bootstrap_styles:
-            hover: hover
             striped: 0
             bordered: 0
+            hover: 0
             condensed: 0
       row:
         type: fields
@@ -426,18 +426,18 @@ display:
         type: fields
         options: {  }
       fields:
-        field_image_link:
-          id: field_image_link
-          table: node__field_image_link
-          field: field_image_link
+        nid:
+          id: nid
+          table: node_field_data
+          field: nid
           relationship: none
           group_type: group
           admin_label: ''
           label: ''
-          exclude: false
+          exclude: true
           alter:
-            alter_text: true
-            text: '<img src="{{ field_image_link__uri }}" width=185 height=250/>'
+            alter_text: false
+            text: ''
             make_link: false
             path: ''
             absolute: false
@@ -474,8 +474,74 @@ display:
           hide_empty: false
           empty_zero: false
           hide_alter_empty: true
+          click_sort_column: value
+          type: number_integer
+          settings:
+            thousand_separator: ''
+            prefix_suffix: true
+          group_column: value
+          group_columns: {  }
+          group_rows: true
+          delta_limit: 0
+          delta_offset: 0
+          delta_reversed: false
+          delta_first_last: false
+          multi_type: separator
+          separator: ', '
+          field_api_classes: false
+          entity_type: node
+          entity_field: nid
+          plugin_id: field
+        field_image_link:
+          id: field_image_link
+          table: node__field_image_link
+          field: field_image_link
+          relationship: none
+          group_type: group
+          admin_label: ''
+          label: ''
+          exclude: false
+          alter:
+            alter_text: true
+            text: '<a href="node/{{ nid }}" class="link-top-film" ><img  src="{{ field_image_link__uri }}" width=185 height=250/></a>'
+            make_link: true
+            path: ''
+            absolute: true
+            external: false
+            replace_spaces: false
+            path_case: none
+            trim_whitespace: false
+            alt: ''
+            rel: ''
+            link_class: ''
+            prefix: ''
+            suffix: ''
+            target: ''
+            nl2br: false
+            max_length: 0
+            word_boundary: true
+            ellipsis: true
+            more_link: false
+            more_link_text: ''
+            more_link_path: ''
+            strip_tags: false
+            trim: false
+            preserve_tags: ''
+            html: false
+          element_type: ''
+          element_class: ''
+          element_label_type: ''
+          element_label_class: ''
+          element_label_colon: false
+          element_wrapper_type: ''
+          element_wrapper_class: ''
+          element_default_classes: true
+          empty: ''
+          hide_empty: false
+          empty_zero: false
+          hide_alter_empty: true
           click_sort_column: uri
-          type: link
+          type: link_separate
           settings:
             trim_length: 80
             url_only: false
@@ -568,9 +634,9 @@ display:
           label: ''
           exclude: false
           alter:
-            alter_text: false
-            text: ''
-            make_link: false
+            alter_text: true
+            text: 'un film de {{ field_realisateur }}'
+            make_link: true
             path: ''
             absolute: false
             external: false
@@ -622,26 +688,13 @@ display:
           field_api_classes: false
           plugin_id: field
       pager:
-        type: mini
+        type: some
         options:
           items_per_page: 4
           offset: 0
-          id: 0
-          total_pages: null
-          tags:
-            previous: ‹‹
-            next: ››
-          expose:
-            items_per_page: false
-            items_per_page_label: 'Items per page'
-            items_per_page_options: '5, 10, 25, 50'
-            items_per_page_options_all: false
-            items_per_page_options_all_label: '- All -'
-            offset: false
-            offset_label: Offset
       use_more: true
       use_more_always: true
-      use_more_text: Plus
+      use_more_text: 'Tous les films à ne pas manquer'
       link_display: page_1
       link_url: ''
     cache_metadata:
@@ -649,7 +702,6 @@ display:
       contexts:
         - 'languages:language_content'
         - 'languages:language_interface'
-        - url.query_args
         - 'user.node_grants:view'
         - user.permissions
       tags:

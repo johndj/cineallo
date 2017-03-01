@@ -19,8 +19,20 @@
 /* line 9, ../bootstrap/assets/stylesheets/bootstrap/_normalize.scss */
 
 /*********************************************************************************************************************/
-
+/*                                                 FRONT PAGE
 /*********************************************************************************************************************/
+#search-block-form .input-group {
+    position: relative;
+    display: table;
+    border-collapse: separate;
+    top: 9px;
+}
+
+#search-block-form .btn-primary {
+    color: #fff;
+    background-color: #333;
+    border-color: #202020;
+}
 
 .view-frontpage .view-empty, .feed-icons{
     display: none;
@@ -60,16 +72,56 @@
 
 .path-frontpage .btn-default {
     color: #333;
-    background-color: #fff;
+    background-color: #333;
     border-color: #333;
     display: block;
     /* text-align: center; */
     margin-left: auto;
     margin-right: auto;
-    width: 20%;
+    width: 27%;
     margin-bottom: 20px;
 }
 
 .path-frontpage .more-link a {
+    color:#fff;
+}
+
+.views-field-field-image-link .field-content{
+    background:#000000;
+    display:inline-block;
+}
+.views-field-field-image-link .field-content img{
+    -moz-transition: opacity 0.9s;
+    -webkit-transition: opacity 0.9s;
+    -o-transition: opacity 0.9s;
+}
+.views-field-field-image-link .field-content img:hover,.views-field-field-image-actualite .field-content img:hover{
+    opacity:0.5;
+    -moz-transition: opacity 0.8s;
+    -webkit-transition: opacity 0.8s;
+    -o-transition: opacity 0.8s;
+}
+
+.path-frontpage .btn-default:hover{
+    background-color: #fff;
     color:#333;
+}
+.path-frontpage .more-link a:hover {
+    color:#333;
+    background-color: #fff;
+}
+
+.view-actualite-cine .views-field-title span a{
+    color:#333;
+    font-weight: bold;
+}
+
+.panel-default > .panel-heading {
+    color: #fff;
+    background-color: #333;
+    border-color: #333;
+}
+
+.region-header h1{
+    text-align: center;
 }

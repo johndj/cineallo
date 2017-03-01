@@ -1,30 +1,30 @@
-uuid: c17616bb-5002-4c76-93e1-d5fb3bc9b9d4
+uuid: 4ce8c69d-6bc6-4ea7-8162-7dfa2a371cd8
 langcode: en
 status: true
 dependencies:
   config:
-    - views.view.bandeannonce
+    - views.view.realisateurs_
   module:
     - system
     - views
   theme:
     - mybootstrap
-id: mybootstrap_views_block__bandeannonce_block_1
+id: views_block__realisateurs__block_1
 theme: mybootstrap
-region: header
-weight: -4
+region: sidebar_first
+weight: -10
 provider: null
-plugin: 'views_block:bandeannonce-block_1'
+plugin: 'views_block:realisateurs_-block_1'
 settings:
-  id: 'views_block:bandeannonce-block_1'
+  id: 'views_block:realisateurs_-block_1'
   label: ''
   provider: views
-  label_display: '0'
+  label_display: visible
   views_label: ''
   items_per_page: none
 visibility:
   request_path:
     id: request_path
-    pages: '<front>'
+    pages: /top-films
     negate: false
     context_mapping: {  }
