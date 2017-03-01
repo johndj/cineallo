@@ -5,12 +5,14 @@ dependencies:
   config:
     - field.field.node.film.body
     - field.field.node.film.field_categorie
+    - field.field.node.film.field_commentaire
     - field.field.node.film.field_guid
     - field.field.node.film.field_image_link
     - field.field.node.film.field_realisateur
     - field.field.node.film.field_title
     - node.type.film
   module:
+    - comment
     - link
     - path
     - text
@@ -37,6 +39,11 @@ content:
     settings: {  }
     third_party_settings: {  }
     type: options_select
+  field_commentaire:
+    weight: 37
+    settings: {  }
+    third_party_settings: {  }
+    type: comment_default
   field_guid:
     weight: 33
     settings:

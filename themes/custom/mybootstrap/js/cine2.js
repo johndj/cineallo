@@ -6,15 +6,15 @@
         attach: function(context, settings){
             $('li.expanded.dropdown').hover(
                 function() {
-                    $('ul.menu.dropdown-menu').stop(true, true).slideDown('');
+                    $(this).find('ul.menu.dropdown-menu').stop(true, true).slideDown('');
                 },
                 function() {
-                    $('ul.menu.dropdown-menu').stop(true, true).slideUp('');
+                    $(this).find('ul.menu.dropdown-menu').stop(true, true).slideUp('');
                 }
         );
+            $('.navbar-right li.expanded.dropdown a.dropdown-toggle').text('Mon CineAllo');
         }
     }
-
 //initialisation de match height
 
     /*	Drupal.behaviors.collapsableBlock = {

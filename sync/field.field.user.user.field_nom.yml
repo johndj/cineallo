@@ -1,0 +1,21 @@
+uuid: a76fe427-87c0-4feb-a0ee-c76e240541a2
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.user.field_nom
+  module:
+    - text
+    - user
+id: user.user.field_nom
+field_name: field_nom
+entity_type: user
+bundle: user
+label: Nom
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: text
