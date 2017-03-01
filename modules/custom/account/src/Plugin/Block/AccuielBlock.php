@@ -36,6 +36,7 @@ class AccuielBlock extends BlockBase {
           $picture = $user->get('user_picture')->entity->url();
           $nom = $user->get('field_nom')->value;
           $prenom = $user->get('field_prenom')->value;
+          $pseudo = $user->get('name')->value;
           $id = $current_user->id();
           $build = [];
           $build['accuiel_block']['#markup'] = '<ul>
