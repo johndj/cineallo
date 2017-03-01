@@ -749,10 +749,11 @@ $settings['file_scan_ignore_directories'] = [
  *
  * Keep this code block at the end of this file to take full effect.
  */
-#
-# if (file_exists($app_root . '/' . $site_path . '/settings.local.php')) {
-#   include $app_root . '/' . $site_path . '/settings.local.php';
-# }
+
+ if (file_exists($app_root . '/' . $site_path . '/settings.local.php')) {
+   include $app_root . '/' . $site_path . '/settings.local.php';
+ }
+ 
 $databases['default']['default'] = array (
   'database' => 'user9_3',
   'username' => 'user9',
@@ -765,8 +766,3 @@ $databases['default']['default'] = array (
 );
 $settings['install_profile'] = 'standard';
 $config_directories['sync'] = 'sync';
-$config_directories['export'] = 'sites/default/files/config_export';
-$config_directories['import'] = 'sites/default/files/config_import';
-$config_directories = array(
-CONFIG_SYNC_DIRECTORY => 'sync',
-);
