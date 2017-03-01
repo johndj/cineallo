@@ -3,10 +3,16 @@ langcode: en
 status: true
 dependencies:
   config:
+    - field.field.user.user.field_date_de_naissance
+    - field.field.user.user.field_email
+    - field.field.user.user.field_nom
+    - field.field.user.user.field_prenom
     - field.field.user.user.user_picture
     - image.style.thumbnail
   module:
+    - datetime
     - image
+    - text
     - user
 _core:
   default_config_hash: LLAieeozVsoZDb-2PbFxRJpQqnKmpR7-4OoRJnduz-U
@@ -16,18 +22,46 @@ bundle: user
 mode: default
 content:
   account:
-    weight: -10
-  contact:
-    weight: 5
-  language:
+    weight: 2
+    settings: {  }
+    third_party_settings: {  }
+  field_date_de_naissance:
+    weight: 4
+    settings:
+      date_order: YMD
+      time_type: none
+      increment: 15
+    third_party_settings: {  }
+    type: datetime_datelist
+  field_email:
+    weight: 3
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+    type: email_default
+  field_nom:
     weight: 0
-  timezone:
-    weight: 6
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+    type: text_textfield
+  field_prenom:
+    weight: 1
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+    type: text_textfield
   user_picture:
     type: image_image
     settings:
       progress_indicator: throbber
       preview_image_style: thumbnail
     third_party_settings: {  }
-    weight: -1
-hidden: {  }
+    weight: 5
+hidden:
+  contact: true
+  language: true
+  timezone: true

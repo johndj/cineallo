@@ -3,14 +3,17 @@ langcode: en
 status: true
 dependencies:
   config:
+    - core.entity_view_display.comment.comment.default
     - field.field.node.film.body
     - field.field.node.film.field_categorie
+    - field.field.node.film.field_commentaire
     - field.field.node.film.field_guid
     - field.field.node.film.field_image_link
     - field.field.node.film.field_realisateur
     - field.field.node.film.field_title
     - node.type.film
   module:
+    - comment
     - link
     - options
     - text
@@ -32,6 +35,14 @@ content:
     settings: {  }
     third_party_settings: {  }
     type: list_default
+  field_commentaire:
+    weight: 107
+    label: above
+    settings:
+      pager_id: 0
+      view_mode: default
+    third_party_settings: {  }
+    type: comment_default
   field_guid:
     weight: 103
     label: above
@@ -64,4 +75,6 @@ content:
     type: text_default
   links:
     weight: 100
+    settings: {  }
+    third_party_settings: {  }
 hidden: {  }

@@ -1,0 +1,14 @@
+{
+  "name": "drupal/account",
+  "type": "drupal-module",
+  "description": "Account",
+  "keywords": ["Drupal"],
+  "license": "GPL-2.0+",
+  "homepage": "https://www.drupal.org/project/account",
+  "minimum-stability": "dev",
+  "support": {
+    "issues": "https://www.drupal.org/project/issues/account",
+    "source": "http://cgit.drupalcode.org/account"
+  },
+  "require": { }
+}

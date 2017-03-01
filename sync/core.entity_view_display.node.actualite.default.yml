@@ -3,12 +3,14 @@ langcode: en
 status: true
 dependencies:
   config:
+    - field.field.node.actualite.field_commentaire_actua
     - field.field.node.actualite.field_description_actualite
     - field.field.node.actualite.field_guid_actualite
     - field.field.node.actualite.field_image_actualite
     - field.field.node.actualite.field_title_actualite
     - node.type.actualite
   module:
+    - comment
     - link
     - text
     - user
@@ -17,6 +19,14 @@ targetEntityType: node
 bundle: actualite
 mode: default
 content:
+  field_commentaire_actua:
+    weight: 106
+    label: above
+    settings:
+      view_mode: default
+      pager_id: 0
+    third_party_settings: {  }
+    type: comment_default
   field_description_actualite:
     weight: 104
     label: above

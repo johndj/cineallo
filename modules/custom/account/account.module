@@ -1,0 +1,36 @@
+<?php
+
+/**
+ * @file
+ * Contains account.module.
+ */
+
+use Drupal\Core\Routing\RouteMatchInterface;
+
+/**
+ * Implements hook_help().
+ */
+function account_help($route_name, RouteMatchInterface $route_match) {
+  switch ($route_name) {
+    // Main module help for the account module.
+    case 'help.page.account':
+      $output = '';
+      $output .= '<h3>' . t('About') . '</h3>';
+      $output .= '<p>' . t('Account') . '</p>';
+      return $output;
+
+    default:
+  }
+}
+
+/**
+ * Implements hook_theme().
+ */
+function account_theme() {
+  return [
+    'account' => [
+      'template' => 'account',
+      'render element' => 'children',
+    ],
+  ];
+}
