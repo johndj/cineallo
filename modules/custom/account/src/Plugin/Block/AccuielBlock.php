@@ -3,7 +3,8 @@
 namespace Drupal\account\Plugin\Block;
 
 use Drupal\Core\Block\BlockBase;
-
+use Drupal\Core\Session\AccountProxyInterface;
+use Drupal\user\Entity\User;
 /**
  * Provides a 'AccuielBlock' block.
  *
@@ -31,12 +32,16 @@ class AccuielBlock extends BlockBase {
           return $build;
       }
       else {
-          $user = \Drupal\user\Entity\User::load(\Drupal::currentUser()->id());
-          $name = ucfirst($user->get('name')->value);
+          $user = \Drupal\user\Entity\User::load($current_user->id());
+          $picture = $user->get('user_picture')->entity->url();
+          $nom = $user->get('field_nom')->value;
+          $prenom = $user->get('field_prenom')->value;
           $id = $current_user->id();
           $build = [];
           $build['accuiel_block']['#markup'] = '<ul>
                                                 <li>Bienvenue <a href='.$base_path.'user/'.$id.'>'.$name.'</a></li><span>/</span>
+                                                <li><a href='.$base_path.'user/'.$id.'><img src='.$picture.' width=50 /></a></li>
+                                                <li>Bienvenue <a href='.$base_path.'user/'.$id.'>'.$nom.' '.$prenom.'</a></li>
                                                 <li><a href='.$base_path.'user/logout>Deconnexion</a></li>
                                                 </ul>';
           return $build;
