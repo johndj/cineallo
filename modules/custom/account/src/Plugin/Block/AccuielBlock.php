@@ -25,7 +25,7 @@ class AccuielBlock extends BlockBase {
       if ($current_user->id() == 0) {
           $build = [];
           $build['accuiel_block']['#markup'] = '<ul>
-                                                <li><a href='.$base_path.'user/register>Inscription</a></li>
+                                                <li><a href='.$base_path.'user/register>Inscription</a></li><span>/</span>
                                                 <li><a href='.$base_path.'/user/login>Connexion</a></li>
                                                 </ul>';
           return $build;
@@ -36,7 +36,7 @@ class AccuielBlock extends BlockBase {
           $id = $current_user->id();
           $build = [];
           $build['accuiel_block']['#markup'] = '<ul>
-                                                <li>Bienvenue <a href='.$base_path.'user/'.$id.'>'.$name.'</a></li>
+                                                <li>Bienvenue <a href='.$base_path.'user/'.$id.'>'.$name.'</a></li><span>/</span>
                                                 <li><a href='.$base_path.'user/logout>Deconnexion</a></li>
                                                 </ul>';
           return $build;

@@ -28,6 +28,30 @@
     top: 9px;
 }
 
+#search-block-form {
+    width: 50%;
+    float:left;
+}
+
+#block-accuielblock {
+    position: relative;
+    top: 15px;
+}
+
+#block-accuielblock ul li{
+    float:left;
+ }
+
+#block-accuielblock ul li a{
+    color:#fff;
+}
+
+#block-accuielblock ul span{
+    color: white;
+    float: left;
+}
+
+
 #search-block-form .btn-primary {
     color: #fff;
     background-color: #333;
