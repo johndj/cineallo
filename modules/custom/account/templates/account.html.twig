@@ -1,1 +1,8 @@
-<!-- Add you custom twig html here -->
+<span class="glyphicon glyphicon-search" aria-hidden="true"></span>
+<div class="accueil">
+    <div><a href="{{ path }}user/{{ userid }}"><img src="{{ picture }}" /></a></div>
+    <div>
+        <p><a href="{{ path }}user/{{ userid }}">{{ nom }} {{ prenom }}</a></p>
+        <p><a href="{{ path }}user/logout">Deconnexion</a></p>
+    </div>
+</div>

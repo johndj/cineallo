@@ -31,6 +31,13 @@ function account_theme() {
     'account' => [
       'template' => 'account',
       'render element' => 'children',
+        'variables' => [
+            'nom' => '',
+            'prenom'=>'',
+            'userid'=>'',
+            'picture'=>'',
+            'path' =>''
+        ],
     ],
   ];
 }

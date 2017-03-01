@@ -38,13 +38,17 @@ class AccuielBlock extends BlockBase {
           $prenom = $user->get('field_prenom')->value;
           $pseudo = $user->get('name')->value;
           $id = $current_user->id();
-          $build = [];
-          $build['accuiel_block']['#markup'] = '<ul>
-                                                <li><a href='.$base_path.'user/'.$id.'><img src='.$picture.' width=50 /></a></li>
-                                                <li>Bienvenue <a href='.$base_path.'user/'.$id.'>'.$nom.' '.$prenom.'</a></li>
-                                                <li><a href='.$base_path.'user/logout>Deconnexion</a></li>
-                                                </ul>';
-          return $build;
+
+          //return $build;
+
+          return array(
+              '#theme' => 'account',
+              '#nom' => $nom,
+              '#prenom' => $prenom,
+              '#userid' => $id,
+              '#picture' => $picture,
+              '#path' => $base_path
+          );
       }
 
   }
