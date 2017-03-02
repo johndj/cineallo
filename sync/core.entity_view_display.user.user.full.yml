@@ -26,4 +26,8 @@ content:
       image_link: content
     third_party_settings: {  }
     label: hidden
-hidden: {  }
+hidden:
+  field_date_de_naissance: true
+  field_email: true
+  field_nom: true
+  field_prenom: true

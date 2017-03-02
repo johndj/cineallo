@@ -36,12 +36,32 @@
 #block-accuielblock {
     position: relative;
     top: 15px;
+    float: left;
+    width: 20%;
+    text-align: center;
 }
 
 #block-accuielblock ul li{
     float:left;
  }
 
+.btn-user{
+    width: 20%;
+    border-radius: 5px;
+}
+.accueil {
+    clear: both;
+    width: 150px;
+    float: right;
+    /* display: none; */
+    position: absolute;
+    right: 40px;
+    top: 30px;
+    height: 200px;
+    background-color: #222;
+    padding: 20px;
+
+}
 
 
 
@@ -141,4 +161,11 @@
 
 .region-header h1{
     text-align: center;
+}
+
+/*********************************************SECTION ACTUALITE********************************************************/
+
+.views-field-field-description-actualite a{
+    color:#333;
+    font-weight: bold;
 }

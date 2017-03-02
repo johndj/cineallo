@@ -3,6 +3,7 @@ langcode: en
 status: true
 dependencies:
   config:
+    - core.entity_view_display.comment.comment.default
     - field.field.node.actualite.field_commentaire_actua
     - field.field.node.actualite.field_description_actualite
     - field.field.node.actualite.field_guid_actualite
@@ -20,7 +21,7 @@ bundle: actualite
 mode: default
 content:
   field_commentaire_actua:
-    weight: 106
+    weight: 4
     label: above
     settings:
       view_mode: default
@@ -28,20 +29,14 @@ content:
     third_party_settings: {  }
     type: comment_default
   field_description_actualite:
-    weight: 104
-    label: above
-    settings: {  }
-    third_party_settings: {  }
-    type: text_default
-  field_guid_actualite:
-    weight: 105
-    label: above
+    weight: 3
+    label: hidden
     settings: {  }
     third_party_settings: {  }
     type: text_default
   field_image_actualite:
-    weight: 103
-    label: above
+    weight: 2
+    label: hidden
     settings:
       trim_length: 80
       url_only: false
@@ -49,13 +44,16 @@ content:
       rel: ''
       target: ''
     third_party_settings: {  }
-    type: link
+    type: link_separate
   field_title_actualite:
-    weight: 102
+    weight: 1
     label: above
     settings: {  }
     third_party_settings: {  }
     type: text_default
   links:
-    weight: 100
-hidden: {  }
+    weight: 0
+    settings: {  }
+    third_party_settings: {  }
+hidden:
+  field_guid_actualite: true
