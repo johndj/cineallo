@@ -49,6 +49,7 @@ module:
   text: 0
   toolbar: 0
   tour: 0
+  twig_extender: 0
   user: 0
   user_registrationpassword: 0
   video_embed_field: 0

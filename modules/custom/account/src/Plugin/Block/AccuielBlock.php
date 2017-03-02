@@ -23,15 +23,7 @@ class AccuielBlock extends BlockBase {
       $current_user = \Drupal::currentUser();
       global $base_path;
 
-      if ($current_user->id() == 0) {
-          $build = [];
-          $build['accuiel_block']['#markup'] = '<div id="log">
-                                                <a href='.$base_path.'user/register><button type="button" class="btn btn-primary btn-sm">Inscription</button></a>
-                                                <a href='.$base_path.'/user/login><button type="button" class="btn btn-primary btn-sm">Connexion</button></a>
-                                                </div>';
-          return $build;
-      }
-      else {
+      if ($current_user->id() != 0) {
           $user = \Drupal\user\Entity\User::load($current_user->id());
           $picture = $user->get('user_picture')->entity->url();
           $nom = $user->get('field_nom')->value;
@@ -50,7 +42,12 @@ class AccuielBlock extends BlockBase {
               '#path' => $base_path
           );
       }
-
+      else{
+          return array(
+              '#theme' => 'account',
+              '#path' => $base_path
+          );
+      }
   }
 
 }

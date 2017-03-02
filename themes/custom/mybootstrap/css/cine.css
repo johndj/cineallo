@@ -42,8 +42,8 @@
 }
 
 #block-accuielblock ul li{
-    float:left;
- }
+    /*float:left;*/
+}
 
 .btn-user{
     width: 20%;
@@ -51,20 +51,31 @@
 }
 .accueil {
     clear: both;
-    width: 150px;
+    width: 215px;
     float: right;
-    /* display: none; */
+    display: none;
     position: absolute;
-    right: 40px;
+    right: 4px;
     top: 30px;
     height: 200px;
     background-color: #222;
     padding: 20px;
-
+}
+.accueil a{
+    color:#fff;
 }
 
+.accueil-non{
+    width: 265px;
+}
 
-
+.accueil-non ul li {
+    display: inline-block;
+    margin-top: -43px;
+}
+.accueil-non ul li a{
+    color:#fff;
+}
 #search-block-form .btn-primary {
     color: #fff;
     background-color: #333;
@@ -76,8 +87,8 @@
 }
 
 #collapse-0{
-     display: block;
- }
+    display: block;
+}
 
 #block-mybootstrap-views-block-actualite-cine-block-1 .col{
     margin-bottom:20px;
