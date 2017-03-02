@@ -1,9 +1,14 @@
-<span class="glyphicon glyphicon-search" aria-hidden="true"></span>
-<div class="accueil">
-    <div><a href="{{ path }}user/{{ userid }}"><img src="{{ picture }}" /></a></div>
-    <div>
-        <p><a href="{{ path }}user/{{ userid }}">{{ nom }} {{ prenom }}</a></p>
-        <p><a href="{{ path }}user/logout">Deconnexion</a></p>
-    </div>
-</div>
 
+
+    <button type="button" class="btn-user">
+        <span class="glyphicon glyphicon-user" aria-hidden="true"></span>
+    </button>
+
+    <div class="accueil">
+        <div id="user-img">
+            <a href="{{ path }}user/{{ userid }}"><img src="{{ picture }}" /></a></div>
+        <div id="user-log">
+            <p><a href="{{ path }}user/{{ userid }}">{{ nom }} {{ prenom }}</a></p>
+            <p><a href="{{ path }}user/logout">Deconnexion</a></p>
+        </div>
+    </div>

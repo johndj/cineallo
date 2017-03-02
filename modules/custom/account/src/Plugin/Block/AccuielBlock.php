@@ -25,10 +25,10 @@ class AccuielBlock extends BlockBase {
 
       if ($current_user->id() == 0) {
           $build = [];
-          $build['accuiel_block']['#markup'] = '<ul>
-                                                <li><a href=www.google.fr><button>Text</button></a></li>
-                                                <li><a href='.$base_path.'/user/login>Connexion</a></li>
-                                                </ul>';
+          $build['accuiel_block']['#markup'] = '<div id="log">
+                                                <a href='.$base_path.'user/register><button type="button" class="btn btn-primary btn-sm">Inscription</button></a>
+                                                <a href='.$base_path.'/user/login><button type="button" class="btn btn-primary btn-sm">Connexion</button></a>
+                                                </div>';
           return $build;
       }
       else {
