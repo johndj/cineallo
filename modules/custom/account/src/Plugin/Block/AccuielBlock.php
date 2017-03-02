@@ -26,7 +26,7 @@ class AccuielBlock extends BlockBase {
       if ($current_user->id() == 0) {
           $build = [];
           $build['accuiel_block']['#markup'] = '<ul>
-                                                <li><a href='.$base_path.'user/register>Inscription</a></li><span>/</span>
+                                                <li><a href=www.google.fr><button>Text</button></a></li>
                                                 <li><a href='.$base_path.'/user/login>Connexion</a></li>
                                                 </ul>';
           return $build;
