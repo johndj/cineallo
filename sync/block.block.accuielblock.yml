@@ -8,8 +8,8 @@ dependencies:
     - mybootstrap
 id: accuielblock
 theme: mybootstrap
-region: header
-weight: -9
+region: navigation_collapsible
+weight: -7
 provider: null
 plugin: accuiel_block
 settings:

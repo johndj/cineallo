@@ -4,7 +4,6 @@ status: true
 dependencies:
   config:
     - field.field.user.user.field_date_de_naissance
-    - field.field.user.user.field_email
     - field.field.user.user.field_nom
     - field.field.user.user.field_prenom
     - field.field.user.user.user_picture
@@ -29,12 +28,6 @@ content:
       format_type: medium
     third_party_settings: {  }
     type: datetime_default
-  field_email:
-    weight: 3
-    label: above
-    settings: {  }
-    third_party_settings: {  }
-    type: basic_string
   field_nom:
     weight: 1
     label: above

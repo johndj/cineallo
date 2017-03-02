@@ -4,7 +4,6 @@ status: true
 dependencies:
   config:
     - field.field.user.user.field_date_de_naissance
-    - field.field.user.user.field_email
     - field.field.user.user.field_nom
     - field.field.user.user.field_prenom
     - field.field.user.user.user_picture
@@ -33,13 +32,6 @@ content:
       increment: 15
     third_party_settings: {  }
     type: datetime_datelist
-  field_email:
-    weight: 3
-    settings:
-      size: 60
-      placeholder: ''
-    third_party_settings: {  }
-    type: email_default
   field_nom:
     weight: 0
     settings:
