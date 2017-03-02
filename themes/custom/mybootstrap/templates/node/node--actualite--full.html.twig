@@ -76,7 +76,8 @@ view_mode ? view_mode|clean_class,
 ]
 %}
 <article{{ attributes.addClass(classes) }}>
-<h1>test</h1>
+
+    {{ kint(content) }}
     {{ title_prefix }}
     {% if not page %}
         <h2{{ title_attributes }}>
@@ -87,7 +88,6 @@ view_mode ? view_mode|clean_class,
 
     {% if display_submitted %}
         <footer>
-            {{ author_picture }}
             <div{{ author_attributes.addClass('author') }}>
                 {% trans %}Submitted by {{ author_name }} on {{ date }}{% endtrans %}
                 {{ metadata }}
@@ -96,7 +96,9 @@ view_mode ? view_mode|clean_class,
     {% endif %}
 
     <div{{ content_attributes.addClass('content') }}>
-        {{ content }}
+        {{ content.field_title_actualite }}
+       <img src={{ content.field_image_link__uri }} />
+        {{ content.field_description_actualite }}
     </div>
 
 </article>

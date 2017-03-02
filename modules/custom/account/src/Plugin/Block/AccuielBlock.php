@@ -20,6 +20,7 @@ class AccuielBlock extends BlockBase {
    */
   public function build() {
 
+
       $current_user = \Drupal::currentUser();
       global $base_path;
 
