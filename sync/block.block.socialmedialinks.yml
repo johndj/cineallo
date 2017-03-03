@@ -1,0 +1,104 @@
+uuid: 448b81ed-85fb-46b1-a4b6-5aaa621905cc
+langcode: en
+status: true
+dependencies:
+  module:
+    - social_media_links
+  theme:
+    - mybootstrap
+id: socialmedialinks
+theme: mybootstrap
+region: footer
+weight: 0
+provider: null
+plugin: social_media_links_block
+settings:
+  id: social_media_links_block
+  label: 'Social Media Links'
+  provider: social_media_links
+  label_display: '0'
+  platforms:
+    googleplus:
+      value: ''
+      description: ''
+      weight: '-10'
+    youtube:
+      value: ''
+      description: ''
+      weight: '-9'
+    vimeo:
+      value: test
+      description: ''
+      weight: '3'
+    slideshare:
+      value: ''
+      description: ''
+      weight: '-8'
+    instagram:
+      value: ''
+      description: ''
+      weight: '-7'
+    twitter:
+      value: test
+      description: ''
+      weight: '1'
+    email:
+      value: ''
+      description: ''
+      weight: '-6'
+    bitbucket:
+      value: ''
+      description: ''
+      weight: '-5'
+    linkedin:
+      value: ''
+      description: ''
+      weight: '-4'
+    pinterest:
+      value: ''
+      description: ''
+      weight: '-3'
+    tumblr:
+      value: ''
+      description: ''
+      weight: '-2'
+    github:
+      value: ''
+      description: ''
+      weight: '-1'
+    youtube_channel:
+      value: test
+      description: ''
+      weight: '2'
+    facebook:
+      value: test
+      description: ''
+      weight: '0'
+    contact:
+      value: contact
+      description: ''
+      weight: '4'
+    drupal:
+      value: ''
+      description: ''
+      weight: '5'
+    rss:
+      value: ''
+      description: ''
+      weight: '6'
+    behance:
+      value: ''
+      description: ''
+      weight: '7'
+  appearance:
+    orientation: h
+    show_name: 0
+  link_attributes:
+    target: '<none>'
+    rel: '<none>'
+  iconset:
+    style: 'fontawesome:2x'
+    installed_iconsets:
+      fontawesome:
+        examples: ''
+visibility: {  }
