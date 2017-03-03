@@ -106,7 +106,7 @@
             {% if page.header %}
                 {% block header %}
                     <div class="col-sm-12" role="heading">
-                        
+                        {{ page.header }}
                     </div>
                 {% endblock %}
             {% endif %}
@@ -162,7 +162,10 @@
                 {# Content #}
                 {% block content %}
                     <a id="main-content"></a>
-                {{ kint (page.content) }}
+                    <p>{{ kint(node.firstname) }}</p>
+                    {{ kint(user.email) }}
+                    {{ kint(user.username) }}
+                    {{ kint(page.content) }}
                     {{ page.content }}
                 {% endblock %}
             </section>
