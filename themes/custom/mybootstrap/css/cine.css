@@ -246,6 +246,7 @@ a.name{
     display:none
 }
 
+
 .views-field-link-flag a {
     background: red;
     color: #fff;
@@ -294,4 +295,18 @@ a.name{
 
     color: #fff;
 
+
+.block-social-media-links ul.platforms, .pane-social-media-link-widget ul.platforms{
+     float: right;
+     margin-top: -33px;
+ }
+
+.fa-2x {
+   color:black;
+}
+.nav > li > a {
+    position: relative;
+    display: block;
+    padding: 10px 15px;
+    color: #000;
 }
