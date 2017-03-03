@@ -34,3 +34,23 @@ function rss_theme() {
     ],
   ];
 }
+
+function rss_cron(){
+   update_rss();
+
+}
+
+function update_rss(){
+
+    file_get_contents('http://user9.d8.lab/cineallo/rss/prochainement');
+    file_get_contents('http://user9.d8.lab/cineallo/rss/topfilms');
+    file_get_contents('http://user9.d8.lab/cineallo/rss/cettesemaine');
+    file_get_contents('http://user9.d8.lab/cineallo/rss/bandesannonces');
+    file_get_contents('http://user9.d8.lab/cineallo/rss/actualitecine');
+
+    \Drupal::logger('rss')->notice('@type: Added %title.',
+        array(
+            '@type' => 'Flux-Rss-Allocine',
+            '%title' => 'Contenu (Prochainement,TopFilms,Cettesemaine,Acutualite,BandeAnnonce) sont ajoutés depuis AlloCine',
+        ));
+}
