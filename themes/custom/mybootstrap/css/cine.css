@@ -291,11 +291,11 @@ a.name{
     border-radius: 5px;
     text-align: center;
 }
-.label-modif a{
+.label-modif a {
 
     color: #fff;
 
-
+}
 .block-social-media-links ul.platforms, .pane-social-media-link-widget ul.platforms{
      float: right;
      margin-top: -33px;
