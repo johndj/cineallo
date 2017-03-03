@@ -22,21 +22,21 @@ mode: default
 content:
   field_date_de_naissance:
     weight: 4
-    label: above
+    label: inline
     settings:
       timezone_override: ''
-      format_type: medium
+      format_type: html_date
     third_party_settings: {  }
     type: datetime_default
   field_nom:
     weight: 1
-    label: above
+    label: inline
     settings: {  }
     third_party_settings: {  }
     type: text_default
   field_prenom:
     weight: 2
-    label: above
+    label: inline
     settings: {  }
     third_party_settings: {  }
     type: text_default
@@ -47,6 +47,6 @@ content:
       image_style: thumbnail
       image_link: content
     third_party_settings: {  }
-    label: above
+    label: inline
 hidden:
   member_for: true

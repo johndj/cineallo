@@ -4,10 +4,15 @@ status: true
 dependencies:
   config:
     - core.entity_view_mode.user.full
+    - field.field.user.user.field_date_de_naissance
+    - field.field.user.user.field_nom
+    - field.field.user.user.field_prenom
     - field.field.user.user.user_picture
     - image.style.thumbnail
   module:
+    - datetime
     - image
+    - text
     - user
 _core:
   default_config_hash: L2mtwGWH_7wDRCMIR4r_Iu_jmvQ10DV1L8ht8iNZ5qY
@@ -16,18 +21,34 @@ targetEntityType: user
 bundle: user
 mode: full
 content:
-  member_for:
-    weight: 5
+  field_date_de_naissance:
+    type: datetime_default
+    weight: 2
+    label: inline
+    settings:
+      timezone_override: ''
+      format_type: html_date
+    third_party_settings: {  }
+  field_nom:
+    type: text_default
+    weight: 0
+    label: inline
+    settings: {  }
+    third_party_settings: {  }
+  field_prenom:
+    type: text_default
+    weight: 1
+    label: inline
+    settings: {  }
+    third_party_settings: {  }
   user_picture:
     type: image
-    weight: 0
+    weight: 3
     settings:
       image_style: thumbnail
       image_link: content
     third_party_settings: {  }
     label: hidden
 hidden:
-  field_date_de_naissance: true
   field_email: true
-  field_nom: true
-  field_prenom: true
+  member_for: true
