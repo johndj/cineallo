@@ -1,8 +1,8 @@
 favicon:
-  mimetype: image/vnd.microsoft.icon
-  path: ''
-  url: 'http://user8.d8.lab/cineallo/themes/custom/mybootstrap/favicon.ico'
-  use_default: 1
+  mimetype: image/png
+  path: 'public://clapperboard-162084_960_720_0.png'
+  url: 'http://user9.d8.lab/cineallo/themes/custom/mybootstrap/favicon.ico'
+  use_default: 0
 schemas:
   bootstrap: 8000
   mybootstrap: 8000
@@ -12,9 +12,9 @@ features:
   favicon: 1
   node_user_picture: 1
 logo:
-  path: ''
+  path: 'public://clapperboard-162084_960_720.png'
   url: ''
-  use_default: 1
+  use_default: 0
 navbar_inverse: 1
 navbar_position: fixed-top
 region_wells:

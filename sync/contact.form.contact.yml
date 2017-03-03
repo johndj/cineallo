@@ -1,0 +1,12 @@
+uuid: 9450ca09-ed44-47d7-8724-8afd08f9dfaf
+langcode: en
+status: true
+dependencies: {  }
+id: contact
+label: Contact
+recipients:
+  - contact@gmail.com
+reply: ''
+weight: 0
+message: ''
+redirect: /contact
