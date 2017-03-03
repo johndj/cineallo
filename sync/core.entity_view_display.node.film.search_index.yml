@@ -74,6 +74,8 @@ content:
     settings: {  }
     third_party_settings: {  }
     type: text_default
+  flag_favoris:
+    weight: 10
   links:
     weight: 100
     settings: {  }

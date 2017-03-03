@@ -8,7 +8,7 @@ dependencies:
     - field.field.user.user.field_nom
     - field.field.user.user.field_prenom
     - field.field.user.user.user_picture
-    - image.style.thumbnail
+    - image.style.large
   module:
     - datetime
     - image
@@ -23,7 +23,7 @@ mode: full
 content:
   field_date_de_naissance:
     type: datetime_default
-    weight: 2
+    weight: 3
     label: inline
     settings:
       timezone_override: ''
@@ -31,24 +31,25 @@ content:
     third_party_settings: {  }
   field_nom:
     type: text_default
-    weight: 0
+    weight: 1
     label: inline
     settings: {  }
     third_party_settings: {  }
   field_prenom:
     type: text_default
-    weight: 1
+    weight: 2
     label: inline
     settings: {  }
     third_party_settings: {  }
   user_picture:
     type: image
-    weight: 3
+    weight: 0
     settings:
-      image_style: thumbnail
+      image_style: large
       image_link: content
     third_party_settings: {  }
     label: hidden
 hidden:
   field_email: true
+  flag_following: true
   member_for: true
