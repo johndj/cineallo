@@ -1,0 +1,28 @@
+uuid: b5b0af1f-adda-4060-9687-f46c1ea82b28
+langcode: en
+status: true
+dependencies: {  }
+id: favoris
+label: Favoris
+bundles:
+  - film
+entity_type: node
+global: false
+weight: 0
+flag_short: 'Ajouter Favoris'
+flag_long: ''
+flag_message: ''
+unflag_short: 'Supprimer Favoris'
+unflag_long: ''
+unflag_message: ''
+unflag_denied_text: ''
+flag_type: 'entity:node'
+link_type: ajax_link
+flagTypeConfig:
+  show_in_links: {  }
+  show_as_field: true
+  show_on_form: false
+  show_contextual_link: false
+  extra_permissions:
+    owner: '0'
+linkTypeConfig: {  }

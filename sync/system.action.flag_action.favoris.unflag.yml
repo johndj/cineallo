@@ -1,0 +1,13 @@
+uuid: 506cdc59-48bc-4724-9dba-2e968cebd5ce
+langcode: en
+status: true
+dependencies:
+  module:
+    - flag
+id: flag_action.favoris.unflag
+label: 'Unflag this item'
+type: node
+plugin: 'flag_action:favoris.unflag'
+configuration:
+  flag_id: favoris
+  flag_action: unflag

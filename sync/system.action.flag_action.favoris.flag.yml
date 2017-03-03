@@ -1,0 +1,13 @@
+uuid: 11d065d8-044e-4ee6-b2f3-72ac5ba792d3
+langcode: en
+status: true
+dependencies:
+  module:
+    - flag
+id: flag_action.favoris.flag
+label: 'Flag this item'
+type: node
+plugin: 'flag_action:favoris.flag'
+configuration:
+  flag_id: favoris
+  flag_action: flag
