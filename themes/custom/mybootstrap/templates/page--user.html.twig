@@ -162,11 +162,13 @@
                 {# Content #}
                 {% block content %}
                     <a id="main-content"></a>
-                    <p>{{ kint(node.firstname) }}</p>
+                    <p>{{ kint(user.content) }}</p>
                     {{ kint(user.email) }}
                     {{ kint(user.username) }}
                     {{ kint(page.content) }}
                     {{ page.content }}
+                    <span class="field--label">Email :</span> {{ user.email }} <br/>
+                    <span class="label-modif"><a href="{{ path }}user{{ userid }}/edit">Modifier</a></span>
                 {% endblock %}
             </section>
 

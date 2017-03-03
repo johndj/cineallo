@@ -245,3 +245,53 @@ a.name{
 .filter-wrapper .form-inline{
     display:none
 }
+
+.views-field-link-flag a {
+    background: red;
+    color: #fff;
+    padding: 5px;
+    border-radius: 5px;
+}
+
+#favoris {
+    width: 12%;
+}
+
+.action-unflag{
+    background: red;
+    color: #fff;
+    padding: 5px;
+    border-radius: 5px;
+    text-align: center;
+}
+.action-unflag:hover{
+    color:#fff;
+}.action-flag:hover{
+     color:#fff;
+ }
+.action-flag{
+    background: #f0ad4e;
+    color: #fff;
+    padding: 5px;
+    border-radius: 5px;
+    text-align: center;
+}
+
+
+.field--type-image {
+    width: 50%;
+    float: left;
+}
+
+.label-modif{
+    background: #f0ad4e;
+    color: #fff;
+    padding: 5px;
+    border-radius: 5px;
+    text-align: center;
+}
+.label-modif a{
+
+    color: #fff;
+
+}

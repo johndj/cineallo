@@ -5,6 +5,7 @@ namespace Drupal\account\Plugin\Block;
 use Drupal\Core\Block\BlockBase;
 use Drupal\Core\Session\AccountProxyInterface;
 use Drupal\user\Entity\User;
+use Drupal\image\Entity\ImageStyle;
 /**
  * Provides a 'AccuielBlock' block.
  *
@@ -32,6 +33,14 @@ class AccuielBlock extends BlockBase {
           $pseudo = $user->get('name')->value;
           $id = $current_user->id();
 
+          //kint($user->get('user_picture')->entity->uri);
+
+          $path = $user->get('user_picture')->entity->uri->value;
+
+
+          $url = ImageStyle::load('thumbnail')->buildUrl($path);
+          
+
           //return $build;
 
           return array(
@@ -39,7 +48,7 @@ class AccuielBlock extends BlockBase {
               '#nom' => $nom,
               '#prenom' => $prenom,
               '#userid' => $id,
-              '#picture' => $picture,
+              '#picture' => $url,
               '#path' => $base_path
           );
       }
