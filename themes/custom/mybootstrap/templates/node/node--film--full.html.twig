@@ -88,16 +88,24 @@ view_mode ? view_mode|clean_class,
 
     <div{{ content_attributes.addClass('content') }}>
 
-        <div id="image-actu">
-            <img src="{{ node.field_image_actualite.0.url }}" />
+        <div id="image-film">
+            <img src="{{ node.field_image_link.0.url }}" />
         </div>
 
         <div id="title-film">
-            <h2>{{ label }}</h2>
+
+            <h2><span>Titre : </span>{{ label }}</h2>
         </div>
 
+        <div id="real-film">
+            <h2>{{ content.field_realisateur }}</h2>
+        </div>
 
-        <p> {{ content.field_description_actualite }}</p>
+        <div id="syno-film">
+            <h2>Synopsis : </h2>
+            <p> {{ content.body }}</p>
+        </div>
+
 
         {% if display_submitted %}
             <footer>

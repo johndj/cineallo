@@ -165,6 +165,25 @@
     font-weight: bold;
 }
 
+/*********************************************SECTION FILM*************************************************************/
+.content #image-film {
+    text-align: center;
+}
+
+#real-film h2 .field .field--item a{
+    color:#333;
+}
+#real-film h2 .field .field--label {
+    font-weight:normal;
+}
+
+#syno-film h2{
+    text-decoration: underline;
+}
+.views-field-title a{
+    color:#333;
+
+}
 .panel-default > .panel-heading {
     color: #fff;
     background-color: #333;
@@ -180,4 +199,29 @@
 .views-field-field-description-actualite a{
     color:#333;
     font-weight: bold;
+}
+.page-node-type-actualite .content #image-actu {
+    text-align: center;
+}
+#image-actu img {
+    width: 80%;
+}
+.pagination > .active > a, .pagination > .active > a:hover, .pagination > .active > a:focus, .pagination > .active > span, .pagination > .active > span:hover, .pagination > .active > span:focus{
+    z-index: 3;
+    color: #fff;
+    background-color: #222;
+    border-color: #222;
+    cursor: default;
+}
+
+.pagination > li > a, .pagination > li > span {
+    position: relative;
+    float: left;
+    padding: 6px 12px;
+    line-height: 1.42857;
+    text-decoration: none;
+    color: #222;
+    background-color: #fff;
+    border: 1px solid #ddd;
+    margin-left: -1px;
 }
