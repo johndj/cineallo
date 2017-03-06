@@ -417,7 +417,7 @@ display:
           relationship: none
           group_type: group
           admin_label: ''
-          order: DESC
+          order: ASC
           exposed: false
           expose:
             label: ''
@@ -425,20 +425,6 @@ display:
           entity_type: node
           entity_field: created
           plugin_id: date
-        nid:
-          id: nid
-          table: node_field_data
-          field: nid
-          relationship: none
-          group_type: group
-          admin_label: ''
-          order: DESC
-          exposed: false
-          expose:
-            label: ''
-          entity_type: node
-          entity_field: nid
-          plugin_id: standard
       title: Prochainement
       header: {  }
       footer: {  }
@@ -635,8 +621,8 @@ display:
           label: ''
           exclude: false
           alter:
-            alter_text: false
-            text: ''
+            alter_text: true
+            text: 'un film de {{ field_realisateur }}'
             make_link: false
             path: ''
             absolute: false

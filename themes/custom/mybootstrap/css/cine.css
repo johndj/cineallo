@@ -124,15 +124,29 @@
     background-color: #333;
     border-color: #333;
     display: block;
-    /* text-align: center; */
     margin-left: auto;
     margin-right: auto;
     width: 27%;
     margin-bottom: 20px;
 }
 
+.path-frontpage .btn-default:hover{
+
+}
+
 .path-frontpage .more-link a {
     color:#fff;
+}
+.path-frontpage .more-link a:hover {
+    color: #fff;
+}
+
+.path-frontpage .page-header{
+    display: none;
+}
+
+.path-actualite-cine .bef-exposed-form .form--inline > .form-item{
+    float: none;
 }
 
 .views-field-field-image-link .field-content{
@@ -151,14 +165,8 @@
     -o-transition: opacity 0.8s;
 }
 
-.path-frontpage .btn-default:hover{
-    background-color: #fff;
-    color:#333;
-}
-.path-frontpage .more-link a:hover {
-    color:#333;
-    background-color: #fff;
-}
+
+
 
 .view-actualite-cine .views-field-title span a{
     color:#333;
@@ -195,7 +203,9 @@
 }
 
 /*********************************************SECTION ACTUALITE********************************************************/
-
+.block-views-blockactualite-cine-block-1 .views-field-title{
+    margin-bottom: 10px;
+}
 .views-field-field-description-actualite a{
     color:#333;
     font-weight: bold;
@@ -284,29 +294,57 @@ a.name{
     float: left;
 }
 
-.label-modif{
+.user-logged-in .label-modif{
     background: #f0ad4e;
     color: #fff;
     padding: 5px;
     border-radius: 5px;
     text-align: center;
 }
-.label-modif a {
+.user-logged-in .label-modif a {
 
     color: #fff;
 
 }
 .block-social-media-links ul.platforms, .pane-social-media-link-widget ul.platforms{
-     float: right;
+    text-align: center;
      margin-top: -33px;
  }
 
 .fa-2x {
-   color:black;
+    color: #fff;
 }
 .nav > li > a {
     position: relative;
     display: block;
     padding: 10px 15px;
-    color: #000;
+    color: #fff;
+}
+
+#links-footer1,#links-footer2{
+    border-right: 1px solid #fff;
+}
+#links-footer1,#links-footer2,#links-footer3{
+    text-align: center;
+}
+#links-footer3{
+    border-right: none;
+}
+
+.footer{
+    background-color:#333;
+    width: 100%;
+}
+
+#block-socialmedialinks {
+    position:initial;
+}
+
+.nav > li > a:hover, .nav > li > a:focus {
+    text-decoration: underline;
+    background: none;
+}
+
+.view-actualite-cine .view-filters {
+    text-align: center;
 }
