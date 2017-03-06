@@ -6,6 +6,7 @@ dependencies:
     - field.field.user.user.field_date_de_naissance
     - field.field.user.user.field_nom
     - field.field.user.user.field_prenom
+    - field.field.user.user.field_type_d_utilisateur
     - field.field.user.user.user_picture
     - image.style.thumbnail
   module:
@@ -46,6 +47,11 @@ content:
       placeholder: ''
     third_party_settings: {  }
     type: text_textfield
+  field_type_d_utilisateur:
+    weight: 6
+    settings: {  }
+    third_party_settings: {  }
+    type: options_select
   user_picture:
     type: image_image
     settings:

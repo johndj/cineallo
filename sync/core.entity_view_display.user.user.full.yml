@@ -23,7 +23,7 @@ mode: full
 content:
   field_date_de_naissance:
     type: datetime_default
-    weight: 3
+    weight: 4
     label: inline
     settings:
       timezone_override: ''
@@ -31,19 +31,19 @@ content:
     third_party_settings: {  }
   field_nom:
     type: text_default
-    weight: 1
+    weight: 2
     label: inline
     settings: {  }
     third_party_settings: {  }
   field_prenom:
     type: text_default
-    weight: 2
+    weight: 3
     label: inline
     settings: {  }
     third_party_settings: {  }
   user_picture:
     type: image
-    weight: 0
+    weight: 1
     settings:
       image_style: large
       image_link: content

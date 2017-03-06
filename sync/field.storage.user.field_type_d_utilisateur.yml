@@ -1,0 +1,27 @@
+uuid: bf5f4641-f540-4a8c-95e4-a493ecdc91ef
+langcode: en
+status: true
+dependencies:
+  module:
+    - options
+    - user
+id: user.field_type_d_utilisateur
+field_name: field_type_d_utilisateur
+entity_type: user
+type: list_string
+settings:
+  allowed_values:
+    -
+      value: Utilisateur
+      label: Utilisateur
+    -
+      value: Journaliste
+      label: Journaliste
+  allowed_values_function: ''
+module: options
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

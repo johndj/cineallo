@@ -1,0 +1,15 @@
+uuid: 6f9e1337-71c4-4d6c-9033-1eeb99845013
+langcode: en
+status: true
+dependencies: {  }
+id: journaliste
+label: Journaliste
+weight: 3
+is_admin: null
+permissions:
+  - 'flag favoris'
+  - 'access devel information'
+  - 'execute php code'
+  - 'switch users'
+  - 'access kint'
+  - 'administer devel_generate'

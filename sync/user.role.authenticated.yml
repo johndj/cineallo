@@ -18,3 +18,5 @@ permissions:
   - 'access shortcuts'
   - 'search content'
   - 'never autoplay videos'
+  - 'flag favoris'
+  - 'unflag favoris'

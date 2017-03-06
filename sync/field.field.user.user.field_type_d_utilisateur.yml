@@ -1,0 +1,21 @@
+uuid: 17d67ec3-8b3c-4bae-a373-1c6799d1b659
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.user.field_type_d_utilisateur
+  module:
+    - options
+    - user
+id: user.user.field_type_d_utilisateur
+field_name: field_type_d_utilisateur
+entity_type: user
+bundle: user
+label: 'Type d''utilisateur'
+description: ''
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: list_string

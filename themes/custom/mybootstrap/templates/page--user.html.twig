@@ -162,10 +162,9 @@
                 {# Content #}
                 {% block content %}
                     <a id="main-content"></a>
-                    <p>{{ kint(user.content) }}</p>
-                    {{ kint(user.email) }}
-                    {{ kint(user.username) }}
-                    {{ kint(page.content) }}
+                    {% if 'journaliste' in user.getroles  %}
+                        <p>Vous êtes Journaliste </p>
+                    {% endif %}
                     {{ page.content }}
                     <span class="field--label">Email :</span> {{ user.email }} <br/>
                     <span class="label-modif"><a href="{{ path }}user{{ userid }}/edit">Modifier</a></span>
