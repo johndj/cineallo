@@ -1,0 +1,8 @@
+uuid: 974a4872-30bb-4ca1-a22e-a9a5f0fcbe74
+langcode: en
+status: true
+dependencies: {  }
+id: critique_journaliste
+label: 'Critique Journaliste'
+target_entity_type_id: node
+description: 'Allow comment for only journaliste'

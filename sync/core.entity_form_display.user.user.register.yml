@@ -7,6 +7,7 @@ dependencies:
     - field.field.user.user.field_date_de_naissance
     - field.field.user.user.field_nom
     - field.field.user.user.field_prenom
+    - field.field.user.user.field_type_d_utilisateur
     - field.field.user.user.user_picture
     - image.style.thumbnail
   module:
@@ -22,7 +23,7 @@ bundle: user
 mode: register
 content:
   account:
-    weight: 2
+    weight: 3
     settings: {  }
     third_party_settings: {  }
   field_date_de_naissance:
@@ -34,19 +35,24 @@ content:
     third_party_settings: {  }
     type: datetime_datelist
   field_nom:
-    weight: 0
-    settings:
-      size: 60
-      placeholder: ''
-    third_party_settings: {  }
-    type: text_textfield
-  field_prenom:
     weight: 1
     settings:
       size: 60
       placeholder: ''
     third_party_settings: {  }
     type: text_textfield
+  field_prenom:
+    weight: 2
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+    type: text_textfield
+  field_type_d_utilisateur:
+    type: options_buttons
+    weight: 0
+    settings: {  }
+    third_party_settings: {  }
   user_picture:
     type: image_image
     settings:

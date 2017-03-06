@@ -6,6 +6,7 @@
  */
 
 use Drupal\Core\Routing\RouteMatchInterface;
+use Drupal\Core\Access\AccessResult;
 
 /**
  * Implements hook_help().
@@ -41,3 +42,24 @@ function account_theme() {
     ],
   ];
 }
+
+
+function account_user_insert($account) {
+
+    $type = $account->get('field_type_d_utilisateur')->getString();
+
+
+    if($type == 'Journaliste')
+    {
+        $account->addRole('journaliste');
+        $account->save();
+    }
+
+}
+
+function account_form_alter(&$form, &$form_state, $form_id){
+
+
+
+}
+

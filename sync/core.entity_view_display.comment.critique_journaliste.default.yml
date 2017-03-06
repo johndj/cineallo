@@ -1,0 +1,23 @@
+uuid: abdac7d1-bb09-44ef-b007-5f6e98c58e67
+langcode: en
+status: true
+dependencies:
+  config:
+    - comment.type.critique_journaliste
+    - field.field.comment.critique_journaliste.comment_body
+  module:
+    - text
+id: comment.critique_journaliste.default
+targetEntityType: comment
+bundle: critique_journaliste
+mode: default
+content:
+  comment_body:
+    label: hidden
+    type: text_default
+    weight: 0
+    settings: {  }
+    third_party_settings: {  }
+  links:
+    weight: 100
+hidden: {  }

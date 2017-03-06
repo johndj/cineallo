@@ -119,4 +119,21 @@ view_mode ? view_mode|clean_class,
 
     </div>
 
+    {% if 'journaliste' in user.getroles  %}
+        <div id="critique">
+            <h2>Commentaire : </h2>
+            <p> {{ content.field_commentaire.0.comments }}</p>
+            <h2>Critique : </h2>
+            <p> {{ content.field_critique }}</p>
+        </div>
+     {% else %}
+         <div id="comment">
+             <h2>Critique : </h2>
+             <p> {{ content.field_critique.0.comments }}</p>
+             <h2>Commentaire : </h2>
+             <p> {{ content.field_commentaire }}</p>
+         </div>
+    {% endif %}
+
+
 </article>

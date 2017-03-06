@@ -15,6 +15,7 @@ dependencies:
     - text
     - user
     - views_bootstrap
+    - views_infinite_scroll
 id: cette_semaine
 label: 'Cette semaine'
 module: views
@@ -502,7 +503,7 @@ display:
       relationships: {  }
       arguments: {  }
       display_extenders: {  }
-      use_more: true
+      use_more: false
       use_more_always: true
       use_more_text: Plus
     cache_metadata:
@@ -936,23 +937,10 @@ display:
           1: AND
       title: 'Sortie de la Semaine'
       pager:
-        type: mini
+        type: some
         options:
           items_per_page: 4
           offset: 0
-          id: 0
-          total_pages: null
-          tags:
-            previous: ‹‹
-            next: ››
-          expose:
-            items_per_page: false
-            items_per_page_label: 'Items per page'
-            items_per_page_options: '5, 10, 25, 50'
-            items_per_page_options_all: false
-            items_per_page_options_all_label: '- All -'
-            offset: false
-            offset_label: Offset
       use_more: true
       use_more_always: true
       use_more_text: 'Tous les films à l''affiche'
@@ -961,7 +949,6 @@ display:
       contexts:
         - 'languages:language_content'
         - 'languages:language_interface'
-        - url.query_args
         - 'user.node_grants:view'
         - user.permissions
       tags:
@@ -985,7 +972,7 @@ display:
         context: '0'
         menu_name: main
       pager:
-        type: mini
+        type: infinite_scroll
         options:
           items_per_page: 10
           offset: 0
@@ -1002,10 +989,16 @@ display:
             items_per_page_options_all_label: '- All -'
             offset: false
             offset_label: Offset
+          views_infinite_scroll:
+            button_text: +
+            automatically_load_content: false
       defaults:
         pager: false
         filters: false
         filter_groups: false
+        use_more: false
+        use_more_always: false
+        use_more_text: false
       filters:
         status:
           value: '1'
@@ -1070,6 +1063,9 @@ display:
         operator: AND
         groups:
           1: AND
+      use_more: false
+      use_more_always: true
+      use_more_text: Plus
     cache_metadata:
       max-age: 0
       contexts:
