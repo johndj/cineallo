@@ -99,7 +99,7 @@
 
 {# Main #}
 {% block main %}
-    <div role="main" class="main-container {{ container }} js-quickedit-main-content">
+    <div role="main" class="main-container {{ container }} js-quickedit-main-content edit-user-b">
         <div class="row">
 
             {# Header #}
@@ -166,12 +166,6 @@
                         <p>Vous êtes Journaliste </p>
                     {% endif %}
                     {{ page.content }}
-
-
-                    <span class="field--label">Email :</span> {{ user.email }} <br/>
-                    <span class="label-modif"><a href="{{ path }} {{ user.id }}/edit">Modifier</a></span>
-
-
                 {% endblock %}
             </section>
 
