@@ -20,3 +20,7 @@ permissions:
   - 'never autoplay videos'
   - 'flag favoris'
   - 'unflag favoris'
+  - 'administer account settings'
+  - 'change own username'
+  - 'administer users'
+  - 'cancel account'

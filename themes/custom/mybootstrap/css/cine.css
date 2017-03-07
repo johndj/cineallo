@@ -308,8 +308,8 @@ a.name{
 }
 .block-social-media-links ul.platforms, .pane-social-media-link-widget ul.platforms{
     text-align: center;
-     margin-top: -33px;
- }
+    margin-top: -33px;
+}
 
 .fa-2x {
     color: #fff;
@@ -345,33 +345,46 @@ a.name{
     background: none;
 }
 
-.pager li > a {
-    display: inline-block;
-    padding: 14px 24px;
-    background-color: #333;
-    border: 1px solid #ddd;
-    border-radius: 15px;
-    color: #fff;
-    font-size:20px;
-
+.view-actualite-cine .view-filters {
+    text-align: center;
 }
 
-.pager li > a:hover {
-    color: #333;
+.user-register-form .filter-wrapper{
+    display: none;
+}
+
+
+
+span.label-modif,span.field--label{
+    display: none;
 }
 
 
 /*******************************************************FORM***********************************************************/
 .views-exposed-form{
-    text-align: center;
+.user-register-form{
+    width: 60%;
+    margin: 0 auto;
 }
 
-#views-exposed-form-actualite-cine-page-1 .form-inline .form-group {
+.user-register-form #edit-actions{
+    text-align: center;
+    margin: 20px 0 0 0;
+}
+
+.user-register-form .g-recaptcha iframe{
+    margin: -3% 0 0 60%;
+}
+
+.user-register-form .field--type-image{
+    float:none;
+}
+
+.user-logged-in span.label-modif{
     display: block;
     margin-bottom: 10px;
     width: 100%;
 }
-
 #views-exposed-form-actualite-cine-page-1 .form-inline .form-control {
     display: block;
     width: 100%;
@@ -399,4 +412,41 @@ a.name{
 
 .page-node-type-film #node-film-field-critique h2{
     display: none;
+    width: 17%;
+    float: right;
+    margin-right: 25%;
+    margin-top: 24px;
+}
+
+.user-logged-in span.field--label{
+    display: block;
+}
+
+.edit-user-b .user-login-form{
+    width: 34%;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.edit-user-b .breadcrumb{
+    display: none;
+}
+
+.edit-user-b .field--type-image{
+    float: none;
+}
+
+.user-form{
+    width: 50%;
+    margin: 0 auto;
+}
+
+.user-login-form{
+    width: 50%;
+    margin: 0 auto;
+}
+
+.edit-user-b #edit-actions{
+    margin-left: 42%;
+    margin-top: 55px;
 }
