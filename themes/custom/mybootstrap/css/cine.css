@@ -356,6 +356,20 @@ a.name{
 
 }
 
+.view-actualite-cine .view-filters {
+    text-align: center;
+}
+
+.user-register-form .filter-wrapper{
+    display: none;
+}
+
+
+
+span.label-modif,span.field--label{
+    display: none;
+}
+
 .pager li > a:hover {
     color: #333;
 }
@@ -379,7 +393,19 @@ a.name{
     margin-bottom: 10px;
     width: 100%;
 }
+.user-register-form .g-recaptcha iframe{
+    margin: -3% 0 0 60%;
+}
 
+.user-register-form .field--type-image{
+    float:none;
+}
+
+.user-logged-in span.label-modif{
+    display: block;
+    margin-bottom: 10px;
+    width: 100%;
+}
 #views-exposed-form-actualite-cine-page-1 .form-inline .form-control {
     display: block;
     width: 100%;
