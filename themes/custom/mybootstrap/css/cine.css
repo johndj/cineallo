@@ -365,6 +365,14 @@ a.name{
 .views-exposed-form{
     text-align: center;
 }
+.user-register-form{
+    width: 60%;
+    margin: 0 auto;
+}
+
+.user-register-form #edit-actions{
+    text-align: center;
+}
 
 #views-exposed-form-actualite-cine-page-1 .form-inline .form-group {
     display: block;
@@ -399,4 +407,4 @@ a.name{
 
 .page-node-type-film #node-film-field-commentaire h2{
     display: none;
-}
+}s
