@@ -405,7 +405,32 @@ a.name{
 
 /*********************************************************FILM TOUS*****************************************************/
 
+
 .page-node-type-film #node-film-field-commentaire h2{
+    display: none;
+}
+
+.page-node-type-film #node-film-field-critique h2{
+    display: none;
+    width: 17%;
+    float: right;
+    margin-right: 25%;
+    margin-top: 24px;
+}
+
+.user-logged-in span.field--label{
+    display: block;
+}
+
+
+.edit-user-b .user-login-form{
+    width: 34%;
+    margin: 0 auto;
+    text-align: center;
+}
+
+
+.edit-user-b .breadcrumb{
     display: none;
 }
 
