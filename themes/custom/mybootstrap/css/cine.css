@@ -177,6 +177,9 @@
 .content #image-film {
     text-align: center;
 }
+.content #image-film img{
+    width: 80%;
+}
 
 #real-film h2 .field .field--item a{
     color:#333;
@@ -192,7 +195,7 @@
     color:#333;
 
 }
-.panel-default > .panel-heading {
+.path-frontpage .panel-default > .panel-heading {
     color: #fff;
     background-color: #333;
     border-color: #333;
@@ -266,6 +269,8 @@ a.name{
 
 #favoris {
     width: 12%;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 .action-unflag{
@@ -372,29 +377,28 @@ a.name{
 }
 
 
-#views-exposed-form-actualite-cine-page-1 .form-inline .form-group {
+#views-exposed-form-actualite-cine-page-1 .form-inline .form-group,#views-exposed-form-film-page-1 .form-inline .form-group {
     display: block;
     margin-bottom: 10px;
     width: 100%;
 }
 
-#views-exposed-form-actualite-cine-page-1 .form-inline .form-control {
+#views-exposed-form-actualite-cine-page-1 .form-inline .form-control,#views-exposed-form-film-page-1 .form-inline .form-control {
     display: block;
     width: 100%;
 }
 
-#views-exposed-form-actualite-cine-page-1 {
+#views-exposed-form-actualite-cine-page-1,#views-exposed-form-film-page-1 {
     text-align: center;
     width: 50%;
     margin-left: auto;
     margin-right: auto;
 }
 
-#views-exposed-form-actualite-cine-page-1 .form-inline .js-form-item-created-min, #views-exposed-form-actualite-cine-page-1 .form-inline .js-form-item-created-max{
+#views-exposed-form-actualite-cine-page-1 .form-inline .js-form-item-created-min, #views-exposed-form-actualite-cine-page-1 .form-inline .js-form-item-created-max,#views-exposed-form-film-page-1 .form-inline .js-form-item-created-max,#views-exposed-form-film-page-1 .form-inline .js-form-item-created-min,#views-exposed-form-film-page-1 .form-inline .form-item-field-categorie-value, #views-exposed-form-film-page-1 .form-inline .form-item-field-realisateur-target-id{
     width: 48%;
     float: left;
 }
-
 
 #views-exposed-form-actualite-cine-page-1 .form-inline .js-form-item-created-min{
     margin-right: 2%;
@@ -403,7 +407,12 @@ a.name{
 
 /*********************************************************FILM TOUS*****************************************************/
 
-
+#title-film {
+    text-align: center;
+}
+#real-film{
+    text-align: center;
+}
 .page-node-type-film #node-film-field-commentaire h2{
     display: none;
 }
@@ -485,4 +494,55 @@ span.label-modif,span.field--label{
 .user-register-form #edit-actions {
     text-align: center;
     margin-top: 35px;
+}
+
+.panel>.panel-heading:after,.panel>.panel-heading:before{
+    position:absolute;
+    top:11px;left:-16px;
+    right:100%;
+    width:0;
+    height:0;
+    display:block;
+    content:" ";
+    border-color:transparent;
+    border-style:solid solid outset;
+    pointer-events:none;
+}
+.panel>.panel-heading:after{
+    border-width:7px;
+    border-right-color:#f7f7f7;
+    margin-top:1px;
+    margin-left:2px;
+}
+.panel>.panel-heading:before{
+    border-right-color:#ddd;
+    border-width:8px;
+}
+
+#comment-film-tous .js-comment {
+    border: 1px solid #ccc;
+    padding: 10px;
+    margin: 5px;
+    border-radius: 10px;
+    background: #f5f5f5;
+}
+
+#comment-film-tous{
+    margin-top: 20px;
+}
+
+#comment-film-tous h2{
+    font-size: 25px;
+    text-align: center;
+}
+
+#comment-film-tous .panel-default > .panel-heading {
+    color: #fff;
+    background-color: #333;
+    border-color: #ddd;
+}
+
+#comment-film-tous .panel-body {
+    padding: 15px;
+    background: #ddd;
 }

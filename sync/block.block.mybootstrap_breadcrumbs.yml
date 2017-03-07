@@ -3,6 +3,7 @@ langcode: en
 status: true
 dependencies:
   module:
+    - node
     - system
   theme:
     - mybootstrap
@@ -19,4 +20,15 @@ settings:
   label: Breadcrumbs
   provider: system
   label_display: '0'
-visibility: {  }
+visibility:
+  node_type:
+    id: node_type
+    bundles:
+      actualite: actualite
+      article: article
+      bandeannonce: bandeannonce
+      film: film
+      page: page
+    negate: false
+    context_mapping:
+      node: '@node.node_route_context:node'

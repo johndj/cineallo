@@ -42,11 +42,12 @@ function rss_cron(){
 
 function update_rss(){
 
-    file_get_contents('http://user9.d8.lab/cineallo/rss/prochainement');
-    file_get_contents('http://user9.d8.lab/cineallo/rss/topfilms');
-    file_get_contents('http://user9.d8.lab/cineallo/rss/cettesemaine');
-    file_get_contents('http://user9.d8.lab/cineallo/rss/bandesannonces');
-    file_get_contents('http://user9.d8.lab/cineallo/rss/actualitecine');
+    file_get_contents('http://user8.d8.lab/cineallo/rss/prochainement');
+    file_get_contents('http://user8.d8.lab/cineallo/rss/topfilms');
+    file_get_contents('http://user8.d8.lab/cineallo/rss/cettesemaine');
+    file_get_contents('http://user8.d8.lab/cineallo/rss/bandesannonces');
+    file_get_contents('http://user8.d8.lab/cineallo/rss/actualitecine');
+
 
     \Drupal::logger('rss')->notice('@type: Added %title.',
         array(

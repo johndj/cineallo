@@ -97,6 +97,10 @@ view_mode ? view_mode|clean_class,
             <h2><span>Titre : </span>{{ label }}</h2>
         </div>
 
+        <div id="favoris">
+            {{ content.flag_favoris }}
+        </div>
+
         <div id="real-film">
             <h2>{{ content.field_realisateur }}</h2>
         </div>
@@ -105,42 +109,59 @@ view_mode ? view_mode|clean_class,
             <h2>Synopsis : </h2>
             <p> {{ content.body }}</p>
         </div>
-        <div id="favoris">
-            {{ content.flag_favoris }}
-        </div>
-        {% if display_submitted %}
-            <footer>
-                <div{{ author_attributes.addClass('author') }}>
-                    {% trans %}Submitted by {{ author_name }} on {{ date }}{% endtrans %}
-                    {{ metadata }}
-                </div>
-            </footer>
-        {% endif %}
 
     </div>
 
-    {% if 'journaliste' in user.getroles  %}
-        <div id="critique">
-            <div class="col-xs-12 col-sm-6 col-md-8">
-                <h2>Commentaire : </h2>
-                <p> {{ content.field_commentaire.0.comments }}</p>
-            </div>
-            <div class="col-xs-6 col-md-4">
-                <h2>Critique : </h2>
-                <p> {{ content.field_critique }}</p>
+    <div id="comment-film-tous">
+
+    {% if 'journaliste' in user.getroles %}
+    <div id="critique">
+        <div class="col-xs-6">
+            <div class="panel panel-default">
+                <div class="panel-heading">
+                    <h2>Critique Presse : </h2>
+                </div>
+                <div class="panel-body">
+                    <p> {{ content.field_critique }}</p>
+                </div>
             </div>
         </div>
-     {% else %}
-         <div id="comment">
-             <div class="col-xs-12 col-sm-6 col-md-8col-xs-6">
-                <h2>Critique : </h2>
-                <p> {{ content.field_critique.0.comments }}</p>
-             </div>
-             <div class="col-xs-6 col-md-4">
-                <h2>Commentaire : </h2>
-                <p> {{ content.field_commentaire }}</p>
-                 <div>
-         </div>
+        <div class="col-xs-6">
+            <div class="panel panel-default">
+                <div class="panel-heading">
+                    <h2>Commentaire : </h2>
+                </div>
+                <div class="panel-body">
+                    <p> {{ content.field_commentaire.0.comments }}</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    {% else %}
+    <div id="comment">
+        <div class="col-xs-6">
+            <div class="panel panel-default">
+                <div class="panel-heading">
+                    <h2>Commentaire : </h2>
+                </div>
+                <div class="panel-body">
+                    <p> {{ content.field_commentaire }}</p>
+                </div>
+            </div>
+        </div>
+        <div class="col-xs-6">
+            <div class="panel panel-default">
+                <div class="panel-heading">
+                    <h2>Critique : </h2>
+                </div>
+                <div class="panel-body">
+                    <p> {{ content.field_critique.0.comments }}</p>
+                </div>
+                    </div>
+                </div>
+            </div>
+
+    </div>
     {% endif %}
 
 

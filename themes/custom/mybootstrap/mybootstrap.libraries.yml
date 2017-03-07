@@ -3,6 +3,7 @@ global-styling:
     theme:
       css/style.css: {}
       css/cine.css: {}
+      css/cine2.css: {}
 
 bootstrap-scripts:
   js:

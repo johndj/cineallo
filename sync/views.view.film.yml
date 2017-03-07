@@ -422,6 +422,7 @@ display:
           entity_type: node
           entity_field: type
           plugin_id: bundle
+          group: 1
         keys:
           id: keys
           table: node_search_index
@@ -500,51 +501,6 @@ display:
             group_items: {  }
           reduce_duplicates: false
           plugin_id: list_field
-        created:
-          id: created
-          table: taxonomy_index
-          field: created
-          relationship: none
-          group_type: group
-          admin_label: ''
-          operator: between
-          value:
-            min: ''
-            max: ''
-            value: ''
-            type: date
-          group: 1
-          exposed: true
-          expose:
-            operator_id: created_op
-            label: 'Du '
-            description: ''
-            use_operator: false
-            operator: created_op
-            identifier: created
-            required: false
-            remember: false
-            multiple: false
-            remember_roles:
-              authenticated: authenticated
-              anonymous: '0'
-              administrator: '0'
-          is_grouped: false
-          group_info:
-            label: 'Post date'
-            description: null
-            identifier: created
-            optional: true
-            widget: select
-            multiple: false
-            remember: false
-            default_group: All
-            default_group_multiple: {  }
-            group_items:
-              1: {  }
-              2: {  }
-              3: {  }
-          plugin_id: date
         field_realisateur_target_id:
           id: field_realisateur_target_id
           table: node__field_realisateur
@@ -590,6 +546,51 @@ display:
           hierarchy: false
           error_message: true
           plugin_id: taxonomy_index_tid
+        created:
+          id: created
+          table: taxonomy_index
+          field: created
+          relationship: none
+          group_type: group
+          admin_label: ''
+          operator: between
+          value:
+            min: ''
+            max: ''
+            value: ''
+            type: date
+          group: 1
+          exposed: true
+          expose:
+            operator_id: created_op
+            label: 'Du '
+            description: ''
+            use_operator: false
+            operator: created_op
+            identifier: created
+            required: false
+            remember: false
+            multiple: false
+            remember_roles:
+              authenticated: authenticated
+              anonymous: '0'
+              administrator: '0'
+          is_grouped: false
+          group_info:
+            label: 'Post date'
+            description: null
+            identifier: created
+            optional: true
+            widget: select
+            multiple: false
+            remember: false
+            default_group: All
+            default_group_multiple: {  }
+            group_items:
+              1: {  }
+              2: {  }
+              3: {  }
+          plugin_id: date
       sorts:
         created:
           id: created
@@ -624,6 +625,10 @@ display:
       arguments: {  }
       display_extenders: {  }
       use_ajax: false
+      filter_groups:
+        operator: AND
+        groups:
+          1: AND
     cache_metadata:
       max-age: 0
       contexts:
