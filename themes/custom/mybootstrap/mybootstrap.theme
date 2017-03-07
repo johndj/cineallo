@@ -14,7 +14,14 @@
  * Implements hook_theme_suggestions_HOOK_alter().
  */
 function mybootstrap_theme_suggestions_form_alter(array &$suggestions, array $variables) {
-    if ($variables['element']['#form_id'] == 'view-filters') {
+    if ($variables['element']['#form_id'] == 'views_exposed_form') {
         $suggestions[] = 'form__actu_block_form';
+    }
+}
+
+function ive_preprocess_block(&$variables) {
+    // Add a clearfix class to system branding blocks.
+    if ($variables['plugin_id'] == 'system_branding_block') {
+        $variables['attributes']['class'][] = 'clearfix';
     }
 }

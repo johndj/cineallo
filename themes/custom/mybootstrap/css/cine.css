@@ -345,6 +345,27 @@ a.name{
     background: none;
 }
 
-.view-actualite-cine .view-filters {
+.pager li > a {
+    display: inline-block;
+    padding: 14px 24px;
+    background-color: #333;
+    border: 1px solid #ddd;
+    border-radius: 15px;
+    color: #fff;
+    font-size:20px;
+
+}
+
+.pager li > a:hover {
+    color: #333;
+}
+
+.views-exposed-form{
     text-align: center;
+}
+
+#views-exposed-form-actualite-cine-page-1 .form-inline .form-group {
+    display: block;
+    margin-bottom: 20px;
+    /* vertical-align: middle; */
 }

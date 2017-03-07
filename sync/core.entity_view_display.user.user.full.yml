@@ -51,5 +51,6 @@ content:
     label: hidden
 hidden:
   field_email: true
+  field_type_d_utilisateur: true
   flag_following: true
   member_for: true
