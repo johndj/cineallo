@@ -360,12 +360,43 @@ a.name{
     color: #333;
 }
 
+
+/*******************************************************FORM***********************************************************/
 .views-exposed-form{
     text-align: center;
 }
 
 #views-exposed-form-actualite-cine-page-1 .form-inline .form-group {
     display: block;
-    margin-bottom: 20px;
-    /* vertical-align: middle; */
+    margin-bottom: 10px;
+    width: 100%;
+}
+
+#views-exposed-form-actualite-cine-page-1 .form-inline .form-control {
+    display: block;
+    width: 100%;
+}
+
+#views-exposed-form-actualite-cine-page-1 {
+    text-align: center;
+    width: 50%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#views-exposed-form-actualite-cine-page-1 .form-inline .js-form-item-created-min, #views-exposed-form-actualite-cine-page-1 .form-inline .js-form-item-created-max{
+    width: 48%;
+    float: left;
+}
+
+
+#views-exposed-form-actualite-cine-page-1 .form-inline .js-form-item-created-min{
+    margin-right: 2%;
+    margin-left: 1%;
+}
+
+/*********************************************************FILM TOUS*****************************************************/
+
+.page-node-type-film #node-film-field-critique h2{
+    display: none;
 }

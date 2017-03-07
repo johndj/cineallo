@@ -19,9 +19,9 @@ function mybootstrap_theme_suggestions_form_alter(array &$suggestions, array $va
     }
 }
 
-function ive_preprocess_block(&$variables) {
+function mybootstrap_preprocess_block(&$variables) {
     // Add a clearfix class to system branding blocks.
-    if ($variables['plugin_id'] == 'system_branding_block') {
-        $variables['attributes']['class'][] = 'clearfix';
+    if ($variables['plugin_id'] == 'views-exposed-form-actualite-cine-page-1') {
+        $variables['attributes']['class'][] = 'jo';
     }
 }
