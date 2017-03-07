@@ -360,15 +360,6 @@ a.name{
     text-align: center;
 }
 
-.user-register-form .filter-wrapper{
-    display: none;
-}
-
-
-
-span.label-modif,span.field--label{
-    display: none;
-}
 
 .pager li > a:hover {
     color: #333;
@@ -379,33 +370,14 @@ span.label-modif,span.field--label{
 .views-exposed-form{
     text-align: center;
 }
-.user-register-form{
-    width: 60%;
-    margin: 0 auto;
-}
 
-.user-register-form #edit-actions{
-    text-align: center;
-}
 
 #views-exposed-form-actualite-cine-page-1 .form-inline .form-group {
     display: block;
     margin-bottom: 10px;
     width: 100%;
 }
-.user-register-form .g-recaptcha iframe{
-    margin: -3% 0 0 60%;
-}
 
-.user-register-form .field--type-image{
-    float:none;
-}
-
-.user-logged-in span.label-modif{
-    display: block;
-    margin-bottom: 10px;
-    width: 100%;
-}
 #views-exposed-form-actualite-cine-page-1 .form-inline .form-control {
     display: block;
     width: 100%;
@@ -478,4 +450,39 @@ span.label-modif,span.field--label{
 .edit-user-b #edit-actions{
     margin-left: 42%;
     margin-top: 55px;
+}
+
+.user-register-form .g-recaptcha iframe{
+    margin: -3% 0 0 60%;
+}
+
+.user-register-form .field--type-image{
+    float:none;
+}
+
+.user-logged-in span.label-modif{
+    display: block;
+    margin-bottom: 10px;
+    width: 18%;
+    margin-right: 30%;
+    float: right;
+    margin-top: 26px;
+}
+
+.user-register-form{
+    width: 60%;
+    margin: 0 auto;
+}
+
+.user-register-form .filter-wrapper{
+    display: none;
+}
+
+span.label-modif,span.field--label{
+    display: none;
+}
+
+.user-register-form #edit-actions {
+    text-align: center;
+    margin-top: 35px;
 }
