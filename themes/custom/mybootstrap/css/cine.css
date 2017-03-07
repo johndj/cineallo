@@ -407,4 +407,24 @@ a.name{
 
 .page-node-type-film #node-film-field-commentaire h2{
     display: none;
-}s
+}
+
+.edit-user-b .field--type-image{
+    float: none;
+}
+
+
+.user-form{
+    width: 50%;
+    margin: 0 auto;
+}
+
+.user-login-form{
+    width: 50%;
+    margin: 0 auto;
+}
+
+.edit-user-b #edit-actions{
+    margin-left: 42%;
+    margin-top: 55px;
+}
