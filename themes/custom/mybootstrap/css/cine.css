@@ -362,6 +362,8 @@ span.label-modif,span.field--label{
 
 /*******************************************************FORM***********************************************************/
 .views-exposed-form{
+    text-align: center;
+}
 .user-register-form{
     width: 60%;
     margin: 0 auto;
