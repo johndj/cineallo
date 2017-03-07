@@ -3,6 +3,7 @@ langcode: en
 status: true
 dependencies:
   config:
+    - core.entity_view_display.comment.critique_journaliste.default
     - field.field.node.film.body
     - field.field.node.film.field_categorie
     - field.field.node.film.field_commentaire
@@ -10,7 +11,6 @@ dependencies:
     - field.field.node.film.field_guid
     - field.field.node.film.field_image_link
     - field.field.node.film.field_realisateur
-    - field.field.node.film.field_test
     - field.field.node.film.field_title
     - node.type.film
   module:
@@ -42,10 +42,12 @@ content:
     settings:
       pager_id: 0
       view_mode: default
-    third_party_settings: {  }
+    third_party_settings:
+      ajax_comments:
+        enable_ajax_comments: '1'
     type: comment_default
   field_critique:
-    weight: 10
+    weight: 9
     label: above
     settings:
       view_mode: default
@@ -76,14 +78,6 @@ content:
       link: true
     third_party_settings: {  }
     type: entity_reference_label
-  field_test:
-    weight: 9
-    label: above
-    settings:
-      view_mode: default
-      pager_id: 0
-    third_party_settings: {  }
-    type: comment_default
   field_title:
     weight: 5
     label: above

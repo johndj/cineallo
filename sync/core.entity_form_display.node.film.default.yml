@@ -10,7 +10,6 @@ dependencies:
     - field.field.node.film.field_guid
     - field.field.node.film.field_image_link
     - field.field.node.film.field_realisateur
-    - field.field.node.film.field_test
     - field.field.node.film.field_title
     - node.type.film
   module:
@@ -73,11 +72,6 @@ content:
       placeholder: ''
     third_party_settings: {  }
     type: entity_reference_autocomplete
-  field_test:
-    weight: 38
-    settings: {  }
-    third_party_settings: {  }
-    type: comment_default
   field_title:
     weight: 35
     settings:
