@@ -21,7 +21,7 @@ bundle: actualite
 mode: default
 content:
   field_commentaire_actua:
-    weight: 4
+    weight: 3
     label: above
     settings:
       view_mode: default
@@ -29,13 +29,13 @@ content:
     third_party_settings: {  }
     type: comment_default
   field_description_actualite:
-    weight: 3
+    weight: 2
     label: hidden
     settings: {  }
     third_party_settings: {  }
     type: text_default
   field_image_actualite:
-    weight: 2
+    weight: 1
     label: hidden
     settings:
       trim_length: 80
@@ -45,15 +45,10 @@ content:
       target: ''
     third_party_settings: {  }
     type: link_separate
-  field_title_actualite:
-    weight: 1
-    label: above
-    settings: {  }
-    third_party_settings: {  }
-    type: text_default
   links:
     weight: 0
     settings: {  }
     third_party_settings: {  }
 hidden:
   field_guid_actualite: true
+  field_title_actualite: true

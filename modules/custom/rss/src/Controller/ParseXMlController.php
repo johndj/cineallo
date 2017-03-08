@@ -37,7 +37,7 @@ class ParseXMlController extends ControllerBase
 
         foreach ($arr['channel']['item'] as $item) {
 
-            $guid = str_replace("cinealaffiche", "", $item['guid']);
+            $guid = str_replace("cinecettesemaine", "", $item['guid']);
             $image = $item['enclosure']['@attributes']['url'];
             $title = $item['title'];
             $description =  $item['description'];
@@ -113,7 +113,7 @@ class ParseXMlController extends ControllerBase
         $output = array();
 
         foreach ($arr['channel']['item'] as $item) {
-            $guid = str_replace("cinealaffiche", "", $item['guid']);
+            $guid = str_replace("cineprochainement", "", $item['guid']);
             $image = $item['enclosure']['@attributes']['url'];
             $title = $item['title'];
             $description =  $item['description'];
