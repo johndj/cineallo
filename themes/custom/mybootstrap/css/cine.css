@@ -388,14 +388,14 @@ a.name{
     width: 100%;
 }
 
-#views-exposed-form-actualite-cine-page-1,#views-exposed-form-film-page-1 {
+#views-exposed-form-actualite-cine-page-1{
     text-align: center;
     width: 50%;
     margin-left: auto;
     margin-right: auto;
 }
 
-#views-exposed-form-actualite-cine-page-1 .form-inline .js-form-item-created-min, #views-exposed-form-actualite-cine-page-1 .form-inline .js-form-item-created-max,#views-exposed-form-film-page-1 .form-inline .js-form-item-created-max,#views-exposed-form-film-page-1 .form-inline .js-form-item-created-min,#views-exposed-form-film-page-1 .form-inline .form-item-field-categorie-value, #views-exposed-form-film-page-1 .form-inline .form-item-field-realisateur-target-id{
+#views-exposed-form-actualite-cine-page-1 .form-inline .js-form-item-created-min, #views-exposed-form-actualite-cine-page-1 .form-inline .js-form-item-created-max{
     width: 48%;
     float: left;
 }
@@ -404,7 +404,19 @@ a.name{
     margin-right: 2%;
     margin-left: 1%;
 }
+/*********************************************************FORM TOUS*****************************************************/
+#views-exposed-form-film-page-1 .form-inline .js-form-item-created-max, #views-exposed-form-film-page-1 .form-inline .js-form-item-created-min, #views-exposed-form-film-page-1 .form-inline .form-item-field-categorie-value, #views-exposed-form-film-page-1 .form-inline .form-item-field-realisateur-target-id {
+    width: 22%;
+    float: left;
+    margin-left: 2%;
+}
 
+#views-exposed-form-film-page-1 {
+    text-align: center;
+    width: 60%;
+    margin-left: auto;
+    margin-right: auto;
+}
 /*********************************************************FILM TOUS*****************************************************/
 
 #title-film {
@@ -545,4 +557,8 @@ span.label-modif,span.field--label{
 #comment-film-tous .panel-body {
     padding: 15px;
     background: #ddd;
+}
+
+.region-content {
+    min-height: 324px;
 }
