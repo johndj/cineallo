@@ -15,7 +15,12 @@ label: Image
 description: ''
 required: false
 translatable: false
-default_value: {  }
+default_value:
+  -
+    attributes: {  }
+    uri: 'https://placeholdit.imgix.net/~text?txtsize=33&txt=180%C3%97250&w=180&h=250'
+    title: ''
+    options: {  }
 default_value_callback: ''
 settings:
   link_type: 17
