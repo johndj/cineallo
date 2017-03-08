@@ -48,6 +48,8 @@
 .btn-user{
     width: 20%;
     border-radius: 5px;
+    background: #222;
+    color: #fff;
 }
 .accueil {
     clear: both;
@@ -79,8 +81,8 @@
 }
 #search-block-form .btn-primary {
     color: #fff;
-    background-color: #333;
-    border-color: #202020;
+    background-color: #222;
+    border-color: #333;
 }
 
 .view-frontpage .view-empty, .feed-icons{
@@ -197,7 +199,7 @@
 }
 .path-frontpage .panel-default > .panel-heading {
     color: #fff;
-    background-color: #333;
+    background-color: #222;
     border-color: #333;
 }
 
@@ -337,7 +339,7 @@ a.name{
 }
 
 .footer{
-    background-color:#333;
+    background-color:#222;
     width: 100%;
 }
 
@@ -375,7 +377,28 @@ a.name{
 .views-exposed-form{
     text-align: center;
 }
+.views-exposed-form a .glyphicon-search{
+    padding-left: 5px;
+}
+.views-exposed-form .btn-def-form {
+    color: #fff;
+    background-color: #222;
+    border-color: #333;
 
+}
+
+.views-exposed-form .btn-def-form:hover {
+    text-decoration: underlines;
+}
+.content-view-exposed-form {
+    margin-top: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    padding: 10px;
+    background: #ddd;
+    border-bottom: 1px solid #C1CAD5;
+    border-top: 1px solid #F3F6F9;
+}
 
 #views-exposed-form-actualite-cine-page-1 .form-inline .form-group,#views-exposed-form-film-page-1 .form-inline .form-group {
     display: block;
@@ -550,7 +573,7 @@ span.label-modif,span.field--label{
 
 #comment-film-tous .panel-default > .panel-heading {
     color: #fff;
-    background-color: #333;
+    background-color: #222;
     border-color: #ddd;
 }
 
@@ -561,4 +584,7 @@ span.label-modif,span.field--label{
 
 .region-content {
     min-height: 324px;
+}
+.collapse{
+    display: none;
 }

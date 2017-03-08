@@ -634,7 +634,7 @@ display:
           relationship: none
           group_type: group
           admin_label: ''
-          empty: false
+          empty: true
           content: 'Il y a @total résultats'
           plugin_id: result
       footer: {  }
