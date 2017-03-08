@@ -5,14 +5,15 @@ dependencies:
   module:
     - node
     - system
+    - user
   theme:
     - mybootstrap
 _core:
   default_config_hash: wDR9JKEATSWldBjw8du8s3G2zjEYeQf88nlld11hMLo
 id: mybootstrap_breadcrumbs
 theme: mybootstrap
-region: header
-weight: -9
+region: content
+weight: -12
 provider: null
 plugin: system_breadcrumb_block
 settings:
@@ -32,3 +33,13 @@ visibility:
     negate: false
     context_mapping:
       node: '@node.node_route_context:node'
+  user_role:
+    id: user_role
+    roles:
+      anonymous: anonymous
+      authenticated: authenticated
+      administrator: administrator
+      journaliste: journaliste
+    negate: false
+    context_mapping:
+      user: '@user.current_user_context:current_user'

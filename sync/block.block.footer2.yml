@@ -2,12 +2,16 @@ uuid: cd218b5e-3cb1-4c92-8d02-9728af7911fb
 langcode: en
 status: false
 dependencies:
+  content:
+    - 'block_content:basic:9998ad5d-b960-4e3b-a578-d5d2d9b2c7ab'
+  module:
+    - block_content
   theme:
     - mybootstrap
 id: footer2
 theme: mybootstrap
 region: '-1'
-weight: -8
+weight: -7
 provider: null
 plugin: 'block_content:9998ad5d-b960-4e3b-a578-d5d2d9b2c7ab'
 settings:

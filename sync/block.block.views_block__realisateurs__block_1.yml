@@ -1,18 +1,17 @@
 uuid: 4ce8c69d-6bc6-4ea7-8162-7dfa2a371cd8
 langcode: en
-status: true
+status: false
 dependencies:
   config:
     - views.view.realisateurs_
   module:
-    - system
     - views
   theme:
     - mybootstrap
 id: views_block__realisateurs__block_1
 theme: mybootstrap
-region: sidebar_first
-weight: -10
+region: '-1'
+weight: -9
 provider: null
 plugin: 'views_block:realisateurs_-block_1'
 settings:
@@ -22,9 +21,4 @@ settings:
   label_display: visible
   views_label: ''
   items_per_page: none
-visibility:
-  request_path:
-    id: request_path
-    pages: /top-films
-    negate: false
-    context_mapping: {  }
+visibility: {  }

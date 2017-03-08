@@ -12,7 +12,7 @@ dependencies:
 id: mybootstrap_views_block__top_films_block_1
 theme: mybootstrap
 region: content
-weight: -10
+weight: -11
 provider: null
 plugin: 'views_block:top_films-block_1'
 settings:
