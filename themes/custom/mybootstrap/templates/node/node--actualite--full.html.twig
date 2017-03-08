@@ -97,7 +97,7 @@ view_mode ? view_mode|clean_class,
         </div>
 
 
-        <p> {{ content.field_description_actualite }}</p>
+        <p> {{ content.field_description_actualite|raw }}</p>
 
         {% if display_submitted %}
             <footer>

@@ -304,7 +304,7 @@ display:
           exclude: false
           alter:
             alter_text: false
-            text: ''
+            text: '{{ body__value }}'
             make_link: false
             path: ''
             absolute: false
@@ -341,10 +341,10 @@ display:
           hide_empty: false
           empty_zero: false
           hide_alter_empty: true
-          click_sort_column: value
+          click_sort_column: format
           type: text_trimmed
           settings:
-            trim_length: 300
+            trim_length: 200
           group_column: value
           group_columns: {  }
           group_rows: true
