@@ -314,7 +314,6 @@ class ParseXMlController extends ControllerBase
             $title = $item['title'];
             $description = $item['description'];
 
-
              $nids = \Drupal::entityQuery('node')
                  ->condition('type','actualite')
                  ->condition('field_guid_actualite', $guid)
@@ -329,8 +328,7 @@ class ParseXMlController extends ControllerBase
                      'title' => $item['title'],
                      'field_image_actualite' => $image,
                      'field_guid_actualite' => $guid,
-                     'field_description_actualite' => ['value' => $description, 'format' => 'basic_html'],
-
+                     'field_description_actualite' => ['value' => $description, 'format' => 'full_html']
                  ));
 
 
@@ -413,6 +411,7 @@ class ParseXMlController extends ControllerBase
                 ->condition('type', 'film')
                 ->condition('field_guid', $guid)
                 ->execute();
+
             $nodes = \Drupal\node\Entity\Node::loadMultiple($nids);
 
             if (empty($nodes)) {
@@ -424,7 +423,7 @@ class ParseXMlController extends ControllerBase
                     'field_guid' => $guid,
                     'field_categorie' => $categorie,
                     'field_realisateur' => $realisateur_id,
-                    'body' => ['value' => $description, 'format' => 'basic_html']
+                    'body' => ['value' => $description, 'format' => 'full_html']
                 ));
 
                 $node->save();
