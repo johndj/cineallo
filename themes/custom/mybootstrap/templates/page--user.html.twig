@@ -162,14 +162,12 @@
                 {# Content #}
                 {% block content %}
                     <a id="main-content"></a>
-                    {% if 'journaliste' in user.getroles  %}
-                        <p>Vous êtes Journaliste </p>
-                    {% endif %}
+
                     {{ page.content }}
-
-
+                    <div class="mod">
                     <span class="field--label">Email :</span> {{ user.email }} <br/>
                     <span class="label-modif"><a href="{{ path }} {{ user.id }}/edit">Modifier</a></span>
+                    </div>
 
 
                 {% endblock %}

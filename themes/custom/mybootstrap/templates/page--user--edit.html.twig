@@ -162,9 +162,6 @@
                 {# Content #}
                 {% block content %}
                     <a id="main-content"></a>
-                    {% if 'journaliste' in user.getroles  %}
-                        <p>Vous êtes Journaliste </p>
-                    {% endif %}
                     {{ page.content }}
                 {% endblock %}
             </section>

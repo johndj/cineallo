@@ -11,7 +11,7 @@ _core:
 id: mybootstrap_messages
 theme: mybootstrap
 region: header
-weight: -11
+weight: -9
 provider: null
 plugin: system_messages_block
 settings:

@@ -12,7 +12,7 @@ dependencies:
 id: mybootstrap_views_block__bandeannonce_block_1
 theme: mybootstrap
 region: header
-weight: -9
+weight: -7
 provider: null
 plugin: 'views_block:bandeannonce-block_1'
 settings:
