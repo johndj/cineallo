@@ -12,7 +12,7 @@ features:
   favicon: 1
   node_user_picture: 1
 logo:
-  path: 'public://clapperboard-162084_960_720_2.png'
+  path: 'public://clapperboard-162084_960_720_6.png'
   url: ''
   use_default: 0
 navbar_inverse: 1
