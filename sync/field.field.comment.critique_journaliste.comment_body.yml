@@ -1,0 +1,21 @@
+uuid: e79944dd-e82f-48d4-a606-cce06d3a9531
+langcode: en
+status: true
+dependencies:
+  config:
+    - comment.type.critique_journaliste
+    - field.storage.comment.comment_body
+  module:
+    - text
+id: comment.critique_journaliste.comment_body
+field_name: comment_body
+entity_type: comment
+bundle: critique_journaliste
+label: Comment
+description: ''
+required: true
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: text_long

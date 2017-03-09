@@ -1,0 +1,21 @@
+uuid: 01e62bfe-41d7-446d-92f8-d6b1558f7951
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_description_actualite
+    - node.type.actualite
+  module:
+    - text
+id: node.actualite.field_description_actualite
+field_name: field_description_actualite
+entity_type: node
+bundle: actualite
+label: 'Description actualite'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: text_long

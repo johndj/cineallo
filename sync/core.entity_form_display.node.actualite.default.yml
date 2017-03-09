@@ -1,0 +1,80 @@
+uuid: 6a377ddb-436e-4c32-bc85-215ae90d5be6
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.node.actualite.field_commentaire_actua
+    - field.field.node.actualite.field_description_actualite
+    - field.field.node.actualite.field_guid_actualite
+    - field.field.node.actualite.field_image_actualite
+    - field.field.node.actualite.field_title_actualite
+    - node.type.actualite
+  module:
+    - comment
+    - link
+    - path
+    - text
+id: node.actualite.default
+targetEntityType: node
+bundle: actualite
+mode: default
+content:
+  created:
+    type: datetime_timestamp
+    weight: 2
+    settings: {  }
+    third_party_settings: {  }
+  field_commentaire_actua:
+    weight: 8
+    settings: {  }
+    third_party_settings: {  }
+    type: comment_default
+  field_description_actualite:
+    weight: 7
+    settings:
+      rows: 5
+      placeholder: ''
+    third_party_settings: {  }
+    type: text_textarea
+  field_image_actualite:
+    weight: 6
+    settings:
+      placeholder_url: ''
+      placeholder_title: ''
+    third_party_settings: {  }
+    type: link_default
+  path:
+    type: path
+    weight: 5
+    settings: {  }
+    third_party_settings: {  }
+  promote:
+    type: boolean_checkbox
+    settings:
+      display_label: true
+    weight: 3
+    third_party_settings: {  }
+  sticky:
+    type: boolean_checkbox
+    settings:
+      display_label: true
+    weight: 4
+    third_party_settings: {  }
+  title:
+    type: string_textfield
+    weight: 0
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+  uid:
+    type: entity_reference_autocomplete
+    weight: 1
+    settings:
+      match_operator: CONTAINS
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+hidden:
+  field_guid_actualite: true
+  field_title_actualite: true

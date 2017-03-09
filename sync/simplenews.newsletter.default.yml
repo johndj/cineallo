@@ -1,0 +1,19 @@
+uuid: a40d76ac-f1df-4326-85c9-6fc6b8ee9680
+langcode: en
+status: true
+dependencies: {  }
+_core:
+  default_config_hash: hj6zGNwndnW_J6lKfFcg-tY5e5YqWfgXyt0qioGtXL8
+name: 'Default newsletter'
+id: default
+description: 'This is an example newsletter. Change it.'
+format: plain
+priority: 0
+receipt: true
+from_name: Cine-Allo
+subject: '[[simplenews-newsletter:name]] [node:title]'
+from_address: test@gmail.com
+hyperlinks: false
+new_account: none
+opt_inout: double
+weight: 0

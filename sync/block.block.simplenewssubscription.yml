@@ -1,0 +1,24 @@
+uuid: 9bd5a643-768d-4b72-98be-16d5aff32a2e
+langcode: en
+status: true
+dependencies:
+  module:
+    - simplenews
+  theme:
+    - mybootstrap
+id: simplenewssubscription
+theme: mybootstrap
+region: footer
+weight: -13
+provider: null
+plugin: simplenews_subscription_block
+settings:
+  id: simplenews_subscription_block
+  label: 'Inscription Newsletter'
+  provider: simplenews
+  label_display: visible
+  newsletters:
+    default: default
+  message: ''
+  unique_id: 575ab003-8533-4e87-af7c-6511ea7ba751
+visibility: {  }

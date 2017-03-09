@@ -1,0 +1,34 @@
+{#
+/**
+ * @file
+ * Default theme implementation of a views exposed form.
+ *
+ * Available variables:
+ * - form: A render element representing the form.
+ *
+ * @ingroup templates
+ *
+ * @see template_preprocess_views_exposed_form()
+ */
+#}
+{% if q is not empty %}
+    {#
+      This ensures that, if clean URLs are off, the 'q' is added first,
+      as a hidden form element, so that it shows up first in the POST URL.
+    #}
+    {{ q }}
+{% endif %}
+<div class="row">
+    <a class="btn btn-default btn-def-form" href="#MonCollapse" data-toggle="collapse" aria-expanded="false"
+       aria-controls="MonCollapse">Afficher recherche personnalisé<span class="glyphicon glyphicon-search"
+                                                                        aria-hidden="true"></span></a>
+</div>
+
+<div class="form--inline form-inline clearfix collapse" id="MonCollapse">
+    <div>
+        <h3>Formulaire de recherche</h3>
+    </div>
+
+    <div class="content-view-exposed-form">{{ form }}</div>
+
+</div>

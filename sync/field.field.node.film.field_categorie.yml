@@ -1,0 +1,21 @@
+uuid: cea3b7dd-9679-4c97-9df1-ce8a3324de3b
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_categorie
+    - node.type.film
+  module:
+    - options
+id: node.film.field_categorie
+field_name: field_categorie
+entity_type: node
+bundle: film
+label: Categorie
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: list_string

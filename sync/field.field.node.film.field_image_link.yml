@@ -1,0 +1,28 @@
+uuid: 89e793ce-db1b-4a7d-9333-1149bc5d403b
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_image_link
+    - node.type.film
+  module:
+    - link
+id: node.film.field_image_link
+field_name: field_image_link
+entity_type: node
+bundle: film
+label: Image
+description: ''
+required: false
+translatable: false
+default_value:
+  -
+    attributes: {  }
+    uri: 'https://placeholdit.imgix.net/~text?txtsize=33&txt=180%C3%97250&w=180&h=250'
+    title: ''
+    options: {  }
+default_value_callback: ''
+settings:
+  link_type: 17
+  title: 1
+field_type: link

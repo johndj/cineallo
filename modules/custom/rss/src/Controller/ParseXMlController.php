@@ -5,6 +5,7 @@ namespace Drupal\rss\Controller;
 use Drupal\Core\Controller\ControllerBase;
 use Symfony\Component\DependencyInjection\Loader;
 use Drupal\node\Entity\Node;
+use Drupal\taxonomy\Entity\Term;
 
 /**
  * Class ParseXMlController.
@@ -25,7 +26,6 @@ class ParseXMlController extends ControllerBase
         $xml = simplexml_load_file('http://rss.allocine.fr/ac/cine/cettesemaine?format=xml');
         $arr = json_decode(json_encode($xml), 1);
 
-
         $header = [
             'Title' => t('Title'),
             'Date' => t('Date'),
@@ -36,33 +36,24 @@ class ParseXMlController extends ControllerBase
         $output = array();
 
         foreach ($arr['channel']['item'] as $item) {
-            $guid = str_replace("cinealaffiche", "", $item['guid']);
+
+            $guid = str_replace("cinecettesemaine", "", $item['guid']);
             $image = $item['enclosure']['@attributes']['url'];
             $title = $item['title'];
             $description =  $item['description'];
+            $pieces = explode('</p><p>', $description);
+            $description = $pieces['0'];
+            $realisateur = $pieces['1'];
+            $pieces2 = explode('<br>', $realisateur);
+            $realisateur = str_replace('Un film de ',' ',$pieces2[0]);
+            $categorie = "Cettesemaine";
+            //$acteur = str_replace('Avec ',' ',$pieces2[1]);
+            //kpr($realisateur);
+            //kpr($acteur);
 
-            $nids = \Drupal::entityQuery('node')
-                ->condition('type', 'film')
-                ->condition('field_guid', $guid)
-                ->execute();
-            $nodes = \Drupal\node\Entity\Node::loadMultiple($nids);
+            $realisateur_id = $this->check_rea($realisateur);
 
-
-            if (empty($nodes)) {
-                $node = Node::create(array(
-                    'type' => 'film',
-                    'field_fields' => array(),
-                    'title' => $item['title'],
-                    'field_image_link' => $image,
-                    'field_guid' => $guid,
-                    'field_categorie' => "Cettesemaine",
-                    'body' => $description
-                ));
-
-
-                $node->save();
-            }
-
+            $this->check_film($guid,$title,$image,$categorie,$realisateur_id,$description);
 
             $output[] = [
                 'Title' => $item['title'],
@@ -96,23 +87,6 @@ class ParseXMlController extends ControllerBase
         }
 
 
-        /*$node = \Drupal::entityTypeManager()->getStorage('node')->load($node);
-        $title = $node->getTitle();
-        $count = count($results);
-
-        $build[] = array(
-            'first_para' => array(
-                '#type' => 'markup',
-                '#markup' => "<p>Le noeaud $title a été modifié $count fois</p ",
-            )
-        );*/
-        /*
-        $build[''] = [
-            '#theme' => 'rss',
-            '#output' => $output,
-        ];*/
-
-
         $build['table'] = [
             '#type' => 'table',
             '#header' => $header,
@@ -139,33 +113,22 @@ class ParseXMlController extends ControllerBase
         $output = array();
 
         foreach ($arr['channel']['item'] as $item) {
-            $guid = str_replace("cinealaffiche", "", $item['guid']);
+            $guid = str_replace("cineprochainement", "", $item['guid']);
             $image = $item['enclosure']['@attributes']['url'];
             $title = $item['title'];
             $description =  $item['description'];
+            $pieces = explode('</p><p>', $description);
+            $description = $pieces['0'];
+            $realisateur = $pieces['1'];
+            $pieces2 = explode('<br>', $realisateur);
+            $realisateur = str_replace('Un film de ',' ',$pieces2[0]);
+            $categorie = "Prochainement";
+            //$acteur = str_replace('Avec ',' ',$pieces2[1]);
+            //kpr($acteur);
 
-            $nids = \Drupal::entityQuery('node')
-                ->condition('type', 'film')
-                ->condition('field_guid', $guid)
-                ->execute();
-            $nodes = \Drupal\node\Entity\Node::loadMultiple($nids);
+            $realisateur_id = $this->check_rea($realisateur);
 
-
-            if (empty($nodes)) {
-                $node = Node::create(array(
-                    'type' => 'film',
-                    'field_fields' => array(),
-                    'title' => $item['title'],
-                    'field_image_link' => $image,
-                    'field_guid' => $guid,
-                    'field_categorie' => "Prochainement",
-                    'body' => $description
-                ));
-
-
-                $node->save();
-            }
-
+            $this->check_film($guid,$title,$image,$categorie,$realisateur_id,$description);
 
             $output[] = [
                 'Title' => $item['title'],
@@ -214,6 +177,7 @@ class ParseXMlController extends ControllerBase
         $xml = simplexml_load_file('http://rss.allocine.fr/ac/cine/topfilms?format=xml');
 
         $arr = json_decode(json_encode($xml), 1);
+        //kpr($arr);
 
         $header = [
             'Title' => t('Title'),
@@ -229,29 +193,19 @@ class ParseXMlController extends ControllerBase
             $image = $item['enclosure']['@attributes']['url'];
             $title = $item['title'];
             $description =  $item['description'];
+            $pieces = explode('</p><p>', $description);
+            $description = $pieces['0'];
+            $realisateur = $pieces['1'];
+            $pieces2 = explode('<br>', $realisateur);
+            $realisateur = str_replace('Un film de ',' ',$pieces2[0]);
+            $categorie = "Topfilms";
+            //$acteur = str_replace('Avec ',' ',$pieces2[1]);
+            //kpr($realisateur);
+            //kpr($acteur);
 
-            $nids = \Drupal::entityQuery('node')
-                ->condition('type', 'film')
-                ->condition('field_guid', $guid)
-                ->execute();
-            $nodes = \Drupal\node\Entity\Node::loadMultiple($nids);
+            $realisateur_id = $this->check_rea($realisateur);
 
-
-            if (empty($nodes)) {
-                $node = Node::create(array(
-                    'type' => 'film',
-                    'field_fields' => array(),
-                    'title' => $item['title'],
-                    'field_image_link' => $image,
-                    'field_guid' => $guid,
-                    'field_categorie' => "Topfilms",
-                    'body' => $description
-                ));
-
-
-                $node->save();
-            }
-
+            $this->check_film($guid,$title,$image,$categorie,$realisateur_id,$description);
 
             $output[] = [
                 'Title' => $item['title'],
@@ -374,7 +328,7 @@ class ParseXMlController extends ControllerBase
                      'title' => $item['title'],
                      'field_image_actualite' => $image,
                      'field_guid_actualite' => $guid,
-                     'field_description_actualite' => $description
+                     'field_description_actualite' => ['value' => $description, 'format' => 'full_html']
                  ));
 
 
@@ -424,6 +378,56 @@ class ParseXMlController extends ControllerBase
 
          return $build;
 
+        }
+
+        public function check_rea($realisateur){
+            # check rea
+            $term = \Drupal::entityTypeManager()
+                ->getStorage('taxonomy_term')
+                ->loadByProperties(['name' => strip_tags($realisateur),'vid' => 'realisateur']);
+
+            foreach($term as $term) {
+                $realisateur = $term->id();
+            }
+
+            if(empty($term)) {
+                $term = Term::create(array(
+                    'parent' => array(),
+                    'name' => strip_tags($realisateur),
+                    'vid' => 'realisateur',
+                ));
+
+                $term->save();
+
+                $realisateur = $term->id();
+            }
+
+            return $realisateur;
+        }
+
+        public function check_film($guid,$title,$image,$categorie,$realisateur_id,$description){
+            # check film
+            $nids = \Drupal::entityQuery('node')
+                ->condition('type', 'film')
+                ->condition('field_guid', $guid)
+                ->execute();
+
+            $nodes = \Drupal\node\Entity\Node::loadMultiple($nids);
+
+            if (empty($nodes)) {
+                $node = Node::create(array(
+                    'type' => 'film',
+                    'field_fields' => array(),
+                    'title' => $title,
+                    'field_image_link' => $image,
+                    'field_guid' => $guid,
+                    'field_categorie' => $categorie,
+                    'field_realisateur' => $realisateur_id,
+                    'body' => ['value' => $description, 'format' => 'full_html']
+                ));
+
+                $node->save();
+            }
         }
 }
 

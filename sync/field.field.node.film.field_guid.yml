@@ -1,0 +1,21 @@
+uuid: ec4068df-396c-4778-b901-5a74dd100ba6
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_guid
+    - node.type.film
+  module:
+    - text
+id: node.film.field_guid
+field_name: field_guid
+entity_type: node
+bundle: film
+label: Guid
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: text

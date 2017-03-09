@@ -1,0 +1,26 @@
+uuid: 7e2c60eb-1e01-463a-a29b-1379b9101374
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.node.teaser
+    - field.field.node.bandeannonce.body
+    - node.type.bandeannonce
+  module:
+    - text
+    - user
+id: node.bandeannonce.teaser
+targetEntityType: node
+bundle: bandeannonce
+mode: teaser
+content:
+  body:
+    label: hidden
+    type: text_summary_or_trimmed
+    weight: 101
+    settings:
+      trim_length: 600
+    third_party_settings: {  }
+  links:
+    weight: 100
+hidden: {  }

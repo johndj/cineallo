@@ -1,0 +1,54 @@
+uuid: b7494cf4-9300-4802-b416-7781014aa46b
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.entity_view_display.comment.comment.default
+    - field.field.node.actualite.field_commentaire_actua
+    - field.field.node.actualite.field_description_actualite
+    - field.field.node.actualite.field_guid_actualite
+    - field.field.node.actualite.field_image_actualite
+    - field.field.node.actualite.field_title_actualite
+    - node.type.actualite
+  module:
+    - comment
+    - link
+    - text
+    - user
+id: node.actualite.default
+targetEntityType: node
+bundle: actualite
+mode: default
+content:
+  field_commentaire_actua:
+    weight: 3
+    label: above
+    settings:
+      view_mode: default
+      pager_id: 0
+    third_party_settings: {  }
+    type: comment_default
+  field_description_actualite:
+    weight: 2
+    label: hidden
+    settings: {  }
+    third_party_settings: {  }
+    type: text_default
+  field_image_actualite:
+    weight: 1
+    label: hidden
+    settings:
+      trim_length: 80
+      url_only: false
+      url_plain: false
+      rel: ''
+      target: ''
+    third_party_settings: {  }
+    type: link_separate
+  links:
+    weight: 0
+    settings: {  }
+    third_party_settings: {  }
+hidden:
+  field_guid_actualite: true
+  field_title_actualite: true

@@ -1,0 +1,20 @@
+uuid: a0a46613-c6ff-414c-843e-6cc9ad419e83
+langcode: en
+status: true
+dependencies:
+  module:
+    - comment
+    - node
+id: node.field_commentaire_actua
+field_name: field_commentaire_actua
+entity_type: node
+type: comment
+settings:
+  comment_type: comment
+module: comment
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

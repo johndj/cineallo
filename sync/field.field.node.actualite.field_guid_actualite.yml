@@ -1,0 +1,21 @@
+uuid: edcbafc7-2987-4982-823f-cce5890bdbcc
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_guid_actualite
+    - node.type.actualite
+  module:
+    - text
+id: node.actualite.field_guid_actualite
+field_name: field_guid_actualite
+entity_type: node
+bundle: actualite
+label: 'Guid actualite'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: text

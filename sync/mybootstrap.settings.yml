@@ -1,0 +1,35 @@
+favicon:
+  mimetype: image/png
+  path: 'public://clapperboard-162084_960_720_8.png'
+  url: 'http://user8.d8.lab/cineallo/sites/default/files/clapperboard-162084_960_720_8.png'
+  use_default: 0
+schemas:
+  bootstrap: 8000
+  mybootstrap: 8000
+features:
+  comment_user_picture: 1
+  comment_user_verification: 1
+  favicon: 1
+  node_user_picture: 1
+logo:
+  path: 'public://clapperboard-162084_960_720_6.png'
+  url: ''
+  use_default: 0
+navbar_inverse: 1
+navbar_position: fixed-top
+region_wells:
+  bandeau_header: ''
+  navigation: ''
+  navigation_collapsible: ''
+  header: ''
+  highlighted: ''
+  help: ''
+  content: ''
+  actu: ''
+  sidebar_first: ''
+  sidebar_second: ''
+  footer: ''
+table_responsive: '-1'
+table: ''
+breadcrumb_title: 1
+breadcrumb_home: 1

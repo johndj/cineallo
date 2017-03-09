@@ -1,0 +1,24 @@
+uuid: 4b9ba1b9-2da1-4bba-b220-2c611a5be9cb
+langcode: en
+status: true
+dependencies:
+  config:
+    - system.menu.footer3
+  module:
+    - system
+  theme:
+    - mybootstrap
+id: footer3
+theme: mybootstrap
+region: footer
+weight: -10
+provider: null
+plugin: 'system_menu_block:footer3'
+settings:
+  id: 'system_menu_block:footer3'
+  label: footer3
+  provider: system
+  label_display: '0'
+  level: 1
+  depth: 0
+visibility: {  }

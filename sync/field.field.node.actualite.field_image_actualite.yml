@@ -1,0 +1,28 @@
+uuid: 98737f9c-ce0a-4f55-bdb1-12967eff390f
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_image_actualite
+    - node.type.actualite
+  module:
+    - link
+id: node.actualite.field_image_actualite
+field_name: field_image_actualite
+entity_type: node
+bundle: actualite
+label: 'Image actualite'
+description: ''
+required: false
+translatable: false
+default_value:
+  -
+    attributes: {  }
+    uri: 'https://placeholdit.imgix.net/~text?txtsize=33&txt=640%C3%97256&w=640&h=256'
+    title: ''
+    options: {  }
+default_value_callback: ''
+settings:
+  link_type: 17
+  title: 1
+field_type: link

@@ -1,0 +1,18 @@
+uuid: 85f98b78-98aa-4ba1-bca5-929f2fb51601
+langcode: en
+status: true
+dependencies:
+  module:
+    - menu_ui
+third_party_settings:
+  menu_ui:
+    available_menus:
+      - main
+    parent: 'main:'
+name: BandeAnnonce
+type: bandeannonce
+description: ''
+help: ''
+new_revision: true
+preview_mode: 1
+display_submitted: true

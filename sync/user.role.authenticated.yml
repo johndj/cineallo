@@ -1,0 +1,28 @@
+uuid: 755e6617-cc3f-425f-b720-c3826ab3c4e9
+langcode: en
+status: true
+dependencies: {  }
+_core:
+  default_config_hash: dJ0L2DNSj5q6XVZAGsuVDpJTh5UeYkIPwKrUOOpr8YI
+id: authenticated
+label: 'Authenticated user'
+weight: 1
+is_admin: false
+permissions:
+  - 'access content'
+  - 'use text format basic_html'
+  - 'access comments'
+  - 'post comments'
+  - 'skip comment approval'
+  - 'access site-wide contact form'
+  - 'access shortcuts'
+  - 'search content'
+  - 'never autoplay videos'
+  - 'flag favoris'
+  - 'unflag favoris'
+  - 'administer account settings'
+  - 'change own username'
+  - 'administer users'
+  - 'cancel account'
+  - 'use text format mailchimp_campaign'
+  - 'subscribe to newsletters'

@@ -1,0 +1,23 @@
+uuid: 11bde0b5-5c9f-4461-ad72-8e003c09f691
+langcode: en
+status: true
+dependencies: {  }
+_core:
+  default_config_hash: j5zLMOdJBqC0bMvSdth5UebkprJB8g_2FXHqhfpJzow
+id: anonymous
+label: 'Anonymous user'
+weight: 0
+is_admin: false
+permissions:
+  - 'access content'
+  - 'use text format restricted_html'
+  - 'access comments'
+  - 'access site-wide contact form'
+  - 'search content'
+  - 'never autoplay videos'
+  - 'access devel information'
+  - 'execute php code'
+  - 'switch users'
+  - 'access kint'
+  - 'administer devel_generate'
+  - 'subscribe to newsletters'

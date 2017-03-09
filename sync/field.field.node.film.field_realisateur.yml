@@ -1,0 +1,21 @@
+uuid: daf1c030-5b46-4305-9985-4aa7c1931a7d
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_realisateur
+    - node.type.film
+id: node.film.field_realisateur
+field_name: field_realisateur
+entity_type: node
+bundle: film
+label: Realisateur
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:taxonomy_term'
+  handler_settings: {  }
+field_type: entity_reference

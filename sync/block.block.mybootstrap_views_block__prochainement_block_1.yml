@@ -1,0 +1,30 @@
+uuid: 5f7e1b78-9c0f-44f9-a541-7230f498f0f0
+langcode: en
+status: true
+dependencies:
+  config:
+    - views.view.prochainement
+  module:
+    - system
+    - views
+  theme:
+    - mybootstrap
+id: mybootstrap_views_block__prochainement_block_1
+theme: mybootstrap
+region: sidebar_second
+weight: -10
+provider: null
+plugin: 'views_block:prochainement-block_1'
+settings:
+  id: 'views_block:prochainement-block_1'
+  label: ''
+  provider: views
+  label_display: visible
+  views_label: ''
+  items_per_page: none
+visibility:
+  request_path:
+    id: request_path
+    pages: '<front>'
+    negate: false
+    context_mapping: {  }

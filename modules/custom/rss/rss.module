@@ -15,7 +15,7 @@ function rss_help($route_name, RouteMatchInterface $route_match) {
     // Main module help for the rss module.
     case 'help.page.rss':
       $output = '';
-      $output .= '<h4>' . t('About') . '</h4>';
+      $output .= '<h4>' . t('About john') . '</h4>';
       $output .= '<p>' . t('My Awesome Module') . '</p>';
       return $output;
 
@@ -33,4 +33,25 @@ function rss_theme() {
       'render element' => 'children',
     ],
   ];
+}
+
+function rss_cron(){
+   update_rss();
+
+}
+
+function update_rss(){
+
+    file_get_contents('http://user9.d8.lab/cineallo/rss/prochainement');
+    file_get_contents('http://user9.d8.lab/cineallo/rss/topfilms');
+    file_get_contents('http://user9.d8.lab/cineallo/rss/cettesemaine');
+    file_get_contents('http://user9.d8.lab/cineallo/rss/bandesannonces');
+    file_get_contents('http://user9.d8.lab/cineallo/rss/actualitecine');
+
+
+    \Drupal::logger('rss')->notice('@type: Added %title.',
+        array(
+            '@type' => 'Flux-Rss-Allocine',
+            '%title' => 'Contenu (Prochainement,TopFilms,Cettesemaine,Acutualite,BandeAnnonce) sont ajoutés depuis AlloCine',
+        ));
 }

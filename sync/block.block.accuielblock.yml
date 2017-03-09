@@ -1,0 +1,20 @@
+uuid: bef9246c-4966-4163-a42d-c6973bb80826
+langcode: en
+status: true
+dependencies:
+  module:
+    - account
+  theme:
+    - mybootstrap
+id: accuielblock
+theme: mybootstrap
+region: navigation_collapsible
+weight: -7
+provider: null
+plugin: accuiel_block
+settings:
+  id: accuiel_block
+  label: 'Accuiel block'
+  provider: account
+  label_display: '0'
+visibility: {  }
