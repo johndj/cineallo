@@ -168,6 +168,23 @@
     -o-transition: opacity 0.8s;
 }
 
+.breadcrumb {
+    padding: 8px 15px;
+    margin-bottom: 20px;
+    list-style: none;
+    background-color: #fff;
+    border-radius: 4px;
+}
+
+.breadcrumb > .active {
+    color: #222;
+    font-weight: bold;
+}
+
+.breadcrumb a {
+    color: #222;
+    text-decoration: none;
+}
 
 .navbar-nav {
     margin-top: 5px;
@@ -251,6 +268,7 @@
 }
 .views-field-title a{
     color:#333;
+    font-weight: bold;
 
 }
 .path-frontpage .panel-default > .panel-heading {
@@ -371,7 +389,7 @@ a.name{
 }
 .block-social-media-links ul.platforms, .pane-social-media-link-widget ul.platforms{
     text-align: center;
-     margin-top: -33px;
+     margin-top: 20px;
  }
 
 .fa-2x {
@@ -398,10 +416,51 @@ a.name{
     background-color:#222;
     width: 100%;
     border-top: 5px solid #ccc;
+    padding-top: 5px;
+}
+.block-simplenews-subscription-block{
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+    width: 20%;
+    text-align: center;
+    margin-bottom: 30px;
 }
 
+.block-simplenews-subscription-block h2{
+    color:#fff;
+}
+
+.block-simplenews-subscription-block .form-type-email {
+    width: 70%;
+    float: left;
+}
+.block-simplenews-subscription-block .control-label {
+    display: none;
+}
+.block-simplenews-subscription-block .form-actions {
+    width: 28%;
+    float: left;
+    margin-left: 2%;
+}
+.user-logged-in .block-simplenews-subscription-block .form-actions {
+    width: 100%;
+    /* float: left; */
+    margin-left: 2%;
+}
+.block-simplenews-subscription-block .form-submit {
+    width: 100%;
+}
+
+.block-simplenews-subscription-block .btn-default {
+    color: #333;
+    background-color: #fff;
+    border-color: #ccc;
+}
 #block-socialmedialinks {
     position:initial;
+    clear: both;
+
 }
 
 .nav > li > a:hover, .nav > li > a:focus {

@@ -20,3 +20,4 @@ permissions:
   - 'switch users'
   - 'access kint'
   - 'administer devel_generate'
+  - 'subscribe to newsletters'

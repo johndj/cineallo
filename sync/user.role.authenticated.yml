@@ -24,3 +24,5 @@ permissions:
   - 'change own username'
   - 'administer users'
   - 'cancel account'
+  - 'use text format mailchimp_campaign'
+  - 'subscribe to newsletters'
