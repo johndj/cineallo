@@ -1,6 +1,6 @@
 favicon:
   mimetype: image/png
-  path: 'public://clapperboard-162084_960_720_8.png'
+  path: 'public://clapperboard-162084_960_720_14.png'
   url: 'http://user8.d8.lab/cineallo/sites/default/files/clapperboard-162084_960_720_8.png'
   use_default: 0
 schemas:
@@ -12,7 +12,7 @@ features:
   favicon: 1
   node_user_picture: 1
 logo:
-  path: 'public://clapperboard-162084_960_720_6.png'
+  path: 'public://clapperboard-162084_960_720_13.png'
   url: ''
   use_default: 0
 navbar_inverse: 1
@@ -31,5 +31,4 @@ region_wells:
   footer: ''
 table_responsive: '-1'
 table: ''
-breadcrumb_title: 1
 breadcrumb_home: 1

@@ -253,7 +253,7 @@
     text-align: center;
 }
 .content #image-film img{
-    width: 80%;
+    width: 50%;
 }
 
 #real-film h2 .field .field--item a{
@@ -707,4 +707,28 @@ span.label-modif,span.field--label{
 }
 .collapse{
     display: none;
+}
+
+.breadcrumb > li + li:before {
+    content: "/ ";
+    padding: 0 5px;
+    color: #333;
+}
+
+/************************************** Template Grid 3 Colonnes*******************************************************/
+.path-top-films .view-content .col-lg-4,.path-cette-semaine .view-content .col-lg-4,.path-prochainement .view-content .col-lg-4 {
+    width: 33.33333%;
+    margin-top: 20px;
+    text-align: center;
+}
+
+.path-top-films .view-content .views-field-body p,.path-cette-semaine .view-content .views-field-body p,.path-prochainement .view-content .views-field-body p {
+    width: 85%;
+    text-align: justify;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.path-top-films .view-content .views-field-title,.path-cette-semaine .view-content .views-field-title,.path-prochainement .view-content .views-field-title   {
+    margin: 10px;
 }
