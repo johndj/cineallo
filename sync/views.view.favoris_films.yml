@@ -3,7 +3,6 @@ langcode: en
 status: true
 dependencies:
   config:
-    - core.entity_view_mode.node.teaser
     - field.storage.node.body
     - field.storage.node.field_image_link
     - flag.flag.favoris
@@ -88,7 +87,7 @@ display:
           columns:
             field_image_link: field_image_link
             title: title
-            body: body
+            body: title
             link_flag: link_flag
           info:
             field_image_link:
@@ -121,14 +120,21 @@ display:
           empty_table: 0
           responsive: 0
           bootstrap_styles:
-            striped: striped
-            bordered: bordered
-            hover: hover
-            condensed: condensed
+            striped: 0
+            bordered: 0
+            hover: 0
+            condensed: 0
       row:
-        type: 'entity:node'
+        type: fields
         options:
-          view_mode: teaser
+          default_field_elements: true
+          inline:
+            field_image_link: field_image_link
+            title: title
+            body: body
+            link_flag: link_flag
+          separator: ''
+          hide_empty: false
       fields:
         field_image_link:
           id: field_image_link

@@ -349,6 +349,9 @@ a.name{
     color: #fff;
     padding: 5px;
     border-radius: 5px;
+    margin-top: 50px;
+    display: block;
+    text-align:center;
 }
 
 #favoris {
