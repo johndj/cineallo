@@ -47,6 +47,10 @@ content:
       placeholder: ''
     third_party_settings: {  }
     type: text_textfield
+  simplenews:
+    weight: 5
+    settings: {  }
+    third_party_settings: {  }
   user_picture:
     type: image_image
     settings:
