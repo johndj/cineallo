@@ -21,6 +21,13 @@
 /*********************************************************************************************************************/
 /*                                                 FRONT PAGE
 /*********************************************************************************************************************/
+
+
+body {
+    background-image: url('/cineallo/themes/custom/mybootstrap/images/Untitled design (8).png');
+    background-size: 100%;
+}
+
 #search-block-form .input-group {
     position: relative;
     display: table;
@@ -106,8 +113,8 @@
 #block-mybootstrap-views-block-actualite-cine-block-1:before,#block-mybootstrap-views-block-cette-semaine-block-1:before,#block-mybootstrap-views-block-top-films-block-1:before {
     content: "";
     display: block;
-    position: absolute;
-    top: -10px;
+    position: relative;
+    top: 10px;
     left: 50%;
     margin-left: -4.5rem;
     width: 9rem;
@@ -279,6 +286,7 @@
 
 .region-header h1{
     text-align: center;
+    text-decoration: underline;
 }
 
 /*********************************************SECTION ACTUALITE********************************************************/
